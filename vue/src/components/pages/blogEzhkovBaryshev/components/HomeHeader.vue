@@ -74,7 +74,7 @@ export default {name: 'HomePage'}
   width: 80px;
   margin-left: 725px;
   border-radius: 20px;
-  border-color:white;
+  border-color: white;
   position: relative;
   border-style: solid;
   margin-top: -5px;
@@ -87,17 +87,15 @@ export default {name: 'HomePage'}
     height: 100%;
     position: absolute;
     right: 0;
-    top:8px;
+    top: 8px;
   }
 
 }
 
 
-
 .header-list__link {
   font-size: 25px;
   color: white;
-
 }
 
 .header-list__second {
@@ -105,9 +103,10 @@ export default {name: 'HomePage'}
 }
 
 
-.header-list__third{
+.header-list__third {
   padding-right: 22px;
 }
+
 .header-list__second-button {
   margin-top: -15px;
   height: 60px;
@@ -125,7 +124,7 @@ export default {name: 'HomePage'}
     height: 100%;
     position: absolute;
     right: 0;
-    top:14px;
+    top: 14px;
   }
 }
 
@@ -135,7 +134,6 @@ export default {name: 'HomePage'}
 
 .header-list__fifth {
   margin-top: -15px;
-
 }
 
 .header-list__menu-symbol {
@@ -145,12 +143,8 @@ export default {name: 'HomePage'}
 .header__line {
   height: 1px;
   margin-top: 20px;
-  background-color: white; /* Цвет линии */
+  background-color: white;
 
 }
-
-
-
-
 
 </style>
