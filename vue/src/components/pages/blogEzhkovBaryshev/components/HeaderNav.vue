@@ -79,6 +79,7 @@ export default {name: 'HomePage'}
   border-style: solid;
   margin-top: -5px;
   color: white;
+  background: transparent;
 
   &::before {
     font-size: 18px;

@@ -1,17 +1,18 @@
 <template>
   <div>
-    <HomeHeader/>
+    <HeaderHome/>
   </div>
 </template>
 
 <script>
 
-import HomeHeader from "@/components/pages/blogEzhkovBaryshev/components/HomeHeader.vue";
+import HeaderHome from "@/components/pages/blogEzhkovBaryshev/components/HeaderHome.vue";
 
 export default {
-  components: {HomeHeader}
+  components: {HeaderHome}
 }
 </script>
 
 <style scoped lang="less">
+
 </style>
