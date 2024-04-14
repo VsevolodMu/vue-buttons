@@ -1,17 +1,17 @@
 <template>
   <div>
-    <HomeHeader/>
-    <HomeFooter/>
+    <HeaderHome/>
+<!--    <FooterHome/>-->
   </div>
 </template>
 
 <script>
 
-import HomeHeader from "@/components/pages/blogEzhkovBaryshev/components/HomeHeader.vue";
-import HomeFooter from "@/components/pages/blogEzhkovBaryshev/components/HomeFooter.vue";
+import HeaderHome from "@/components/pages/blogEzhkovBaryshev/components/HeaderHome.vue";
+//import FooterHome from "@/components/pages/blogEzhkovBaryshev/components/FooterHome.vue";
 
 export default {
-  components: {HomeHeader, HomeFooter}
+  components: {HeaderHome, /*FooterHome*/}
 }
 </script>
 
