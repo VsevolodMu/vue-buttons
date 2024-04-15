@@ -1,19 +1,11 @@
 <template>
 <div class="slider">
-  <button v-for="(image, index) in images" :key="index" class="slider__button">4325345{{index}}</button>
+  <button>4325345}</button>
 </div>
 </template>
 
 <script>
-export default {
-  name: 'ButtonPagination',
-  props: ['images'],
-  methods: {
-    handleClick(index) {
-      this.$emit('change-index', index);
-    }
-  }
-}
+export default {name: 'ButtonPagination'}
 </script>
 
 <style scoped lang="less">

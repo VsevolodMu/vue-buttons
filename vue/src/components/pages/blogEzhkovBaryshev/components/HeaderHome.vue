@@ -16,7 +16,7 @@ import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNa
 import Search from "@/components/pages/blogEzhkovBaryshev/components/Search.vue";
 
 export default {
-  components: {ButtonPagination, HeaderNav, Search },
+  components: {HeaderNav, Search, ButtonPagination },
 }
 </script>
 

@@ -34,7 +34,7 @@
 </template>
 
 <script>
-export default {name: 'HomePage'}
+export default {name: 'HeaderNav'}
 </script>
 
 <style scoped lang="less">
