@@ -6,15 +6,17 @@
       <br>
       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
     <Search/>
+    <ButtonPagination/>
   </div>
 </template>
 
 <script>
+import ButtonPagination from "@/components/pages/blogEzhkovBaryshev/components/ButtonPagination.vue";
 import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNav.vue";
 import Search from "@/components/pages/blogEzhkovBaryshev/components/Search.vue";
 
 export default {
-  components: {HeaderNav, Search}
+  components: {ButtonPagination, HeaderNav, Search },
 }
 </script>
 
@@ -30,7 +32,7 @@ export default {
   text-align: center;
   font-size: 80px;
   color: white;
-  font-family: SansSerif,serif;
+  font-family: SansSerif, serif;
 }
 
 .slider-paragraph-text {
@@ -39,7 +41,6 @@ export default {
   text-align: center;
   font-size: 25px;
   color: white;
-  font-family: SansSerif,serif;
+  font-family: SansSerif, serif;
 }
-
 </style>
