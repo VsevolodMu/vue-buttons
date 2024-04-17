@@ -29,7 +29,9 @@
             <a href="#Check_in" class="footer-list__link">Social</a>
           </li>
           <li class="footer-list__item footer-list__second">
-            <a href="#Check_in" class="footer-list__link">Business and groups</a>
+            <img class="footer-logo__img" src="../images/Facebook-Logo-Transparent-Background-PNG.png" alt="Логотип сайта">
+            <img class="footer-logo__img" src="../images/instagram-icon.jpg" alt="Логотип сайта">
+            <img class="footer-logo__img" src="../images/twitter-icon.png" alt="Логотип сайта">
           </li>
           <li class="footer-list__item footer-list__third">
             <a href="#Log In" class="footer-list__link">Language</a>
@@ -40,13 +42,28 @@
         </ul>
       </section>
     </div>
-
     </div>
+    <section class="footer__down-buttons">
+      <ul class="footer-list-down" style="display: flex; flex-direction: row;">
+        <li>
+          <h3 class = "footer-logo__text-down-first" >⊞ 2021 RoamStay All night reserved</h3>
+        </li>
+        <li>
+          <h3 class = "footer-logo__text-down-second" >Terms of Service</h3>
+        </li>
+        <li>
+          <h3 class = "footer-logo__text-down-third" >Privacy Policy</h3>
+        </li>
+        <li>
+          <h3 class = "footer-logo__text-down-fourth" >+1 665-555-5454</h3>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 <style>
 .footer {
-  display: flex;
+
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +94,29 @@
   color: white;
   font-size: 33px;
 }
+.footer-logo__text-down-first {
+  margin-top: 1px;
+  color: white;
+  font-size: 17px;
+}
+.footer-logo__text-down-second {
+  margin-top: 1px;
+  color: white;
+  font-size: 17px;
+  margin-left: 339px;
+}
+.footer-logo__text-down-third {
+  margin-top: 1px;
+  color: white;
+  font-size: 17px;
+  margin-left: 68px;
+}
+.footer-logo__text-down-fourth {
+  margin-top: 1px;
+  color: white;
+  font-size: 17px;
+  margin-left: 140px;
+}
 .footer__middle-buttons{
   background: transparent;
   margin-left: 400px;
@@ -87,6 +127,9 @@
 }
 .footer-list {
   list-style-type: none;
+  &-down{
+    display: flex;
+  }
 }
 .footer-list__item:nth-child(n+1) {
   margin-top: 35px;
@@ -94,6 +137,12 @@
 .footer-list__link{
   color: white;
   font-size: 22px;
+}
+.footer__down-buttons{
+  display: flex;
+  background: transparent;
+  margin-top:-10px;
+  margin-left: 115px;
 }
 .footer-list__first-button {
   height: 45px;
