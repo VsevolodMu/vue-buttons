@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="body-main">
       <h2 class="apartments-cards-name">Top 10 apartments</h2>
       <div class="apartments">
@@ -16,12 +17,31 @@
       </div>
       <div class="text">
         <h2 class="text-logo">Conveniences<br>of our service</h2>
-        <h2 class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate all
+        <p class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate all
           <br> kinds of travelers (individuals, families, teams, etc.). We can host guests on a daily bosis or on
           <br> a long term bosis, and we can accommodate all kinds of travelers (individuals, families,
-          <br> teams, etc.).</h2>
+        <br> teams, etc.).</p>
       </div>
+      <section class="service-information">
+        <div class="service-information__card">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom.png" alt="Логотип сайта">
+          <p class="service-information__card-paragraf">Kitchen with all<br><pre> equipment</pre></p>
+        </div>
+        <div class="service-information__card">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-2.png" alt="Логотип сайта">
+          <p class="service-information__card-paragraf"><br>One-tap WiFi<pre> access</pre></p>
+        </div>
+        <div class="service-information__card">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-3.png" alt="Логотип сайта">
+          <p class="service-information__card-paragraf">Round-the-clock<br><pre> support</pre></p>
+        </div>
+        <div class="service-information__card">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-4.png" alt="Логотип сайта">
+          <p class="service-information__card-paragraf">Request late<br><pre> checkout</pre></p>
+        </div>
+      </section>
     </div>
+  </div>
 </template>
 
 <script>
@@ -83,6 +103,7 @@ export default {
   margin-left: 208px;
   margin-top: 15px;
   line-height: 35px;
+  color: #022E40;
 }
 .apartments__cards-text  {
   margin-left: 190px;
@@ -107,5 +128,33 @@ export default {
 .apartments__slider-btn--right {
   margin-left: 25px;
 }
+.service-information{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  margin-left: 110px;
+  background: transparent;
+  font-size: 20px;
+  font-family: Ar,sans-serif;
+  &__card{
+    height: 330px;
+    width:  350px;
+    background-color: white;
+    &-paragraf{
+      margin-left: 120px;
 
+    }
+    &:nth-child(1){
+      border-top-left-radius: 90px;
+    }
+    &:nth-child(4){
+      border-bottom-right-radius: 90px;
+    }
+    &-image{
+      text-align-all:center;
+      margin-left: 140px;
+      margin-top: 90px;
+    }
+  }
+}
 </style>
