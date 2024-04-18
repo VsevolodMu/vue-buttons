@@ -10,6 +10,13 @@
           <button class="apartments__slider-btn-size apartments__slider-btn--right">&gt;</button>
         </div>
       </div>
+      <div class="text">
+        <h2 class="text-logo">Conveniences<br>of our service</h2>
+        <h2 class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate all
+          <br> kinds of travelers (individuals, families, teams, etc.). We can host guests on a daily bosis or on
+          <br> a long term bosis, and we can accommodate all kinds of travelers (individuals, families,
+        <br> teams, etc.).</h2>
+      </div>
     </div>
     <BodyPriceCard/>
   </div>
@@ -41,13 +48,32 @@ export default {
   margin-left: 190px;
   padding-top: 160px;
 }
-
+.text{
+  display: flex;
+  margin-left: 190px;
+  padding-top: 160px;
+}
+.text-logo {
+  font-size: 70px;
+  font-family: SansSerif,serif;
+  display: flex;
+}
+.text-logo-down {
+  font-size: 70px;
+  font-family: SansSerif,serif;
+  margin-left: 190px;
+}
+.text-right-logo{
+  font-size: 20px;
+  margin-left: 208px;
+  margin-top: 15px;
+  line-height: 35px;
+}
 .apartments__cards-text  {
   margin-left: 190px;
   padding-top: 10px;
   font-size: 27px;
 }
-
 .apartments__slider-btn-size {
   height: 80px;
   width: 80px;
