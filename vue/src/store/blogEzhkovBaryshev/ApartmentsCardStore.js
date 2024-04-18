@@ -49,8 +49,7 @@ const state = {
 }
 
 const getters = {
-  getApartmentsCardStore: state => state.ApartmentsCardStore,
-  getApartmensById: state => indexId => state.apartmentsData[indexId]
+  getApartmentsCardStore: state => state.ApartmentsCardStore
 }
 
 export default {

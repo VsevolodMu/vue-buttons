@@ -37,11 +37,11 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('BackgroundCardStore' [
+    ...mapGetters('BackgroundCardStore', [
       'getImages'
     ]),
     cardImage() {
-      return { backgroundImage: 'url(' + this.getImages[this.currentIndex]['image'] + ')' }
+      return {backgroundImage: 'url(' + this.getImages[this.currentIndex]['image'] + ')'}
     }
   },
   methods: {

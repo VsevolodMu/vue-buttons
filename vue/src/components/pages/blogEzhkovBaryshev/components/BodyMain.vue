@@ -16,10 +16,7 @@
           <br> a long term bosis, and we can accommodate all kinds of travelers (individuals, families,
         <br> teams, etc.).</h2>
       </div>
-      <BodyPriceCard
-          v-for="(card, index) in getApartmentsCardStore"
-          :key="index"
-      />
+      <BodyPriceCard/>
     </div>
 </template>
 

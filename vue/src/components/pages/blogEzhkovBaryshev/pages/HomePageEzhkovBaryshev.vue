@@ -1,9 +1,8 @@
 <template>
   <div>
     <HeaderHome/>
-
-    <FooterHome/>
     <BodyMain/>
+    <FooterHome/>
   </div>
 </template>
 
