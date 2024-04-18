@@ -3,7 +3,8 @@
     <div class="body-main">
       <h2 class="apartments-cards-name">Top 10 apartments</h2>
       <div class="apartments">
-        <p class="apartments__cards-text">From a room for a night to a loft for as long like, there's a RoamStay for every
+        <p class="apartments__cards-text">From a room for a night to a loft for as long like, there's a RoamStay for
+          every
           occasion.</p>
         <div class="apartments__slider">
           <button class="apartments__slider-btn-size apartments__slider-btn--left">&lt;</button>
@@ -12,32 +13,45 @@
       </div>
       <div class="card-list"
       >
-        <BodyPriceCard            v-for="(card, index) in getApartmentsCardStore"
-                                  :key="index"/>
+        <BodyPriceCard
+            v-for="(card, index) in getApartmentsCardStore"
+            :key="index"
+            :currentIndex="index"
+            :cardArray="getApartmentsCardStore"/>
+
       </div>
       <div class="text">
         <h2 class="text-logo">Conveniences<br>of our service</h2>
-        <p class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate all
+        <p class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate
+          all
           <br> kinds of travelers (individuals, families, teams, etc.). We can host guests on a daily bosis or on
           <br> a long term bosis, and we can accommodate all kinds of travelers (individuals, families,
-        <br> teams, etc.).</p>
+          <br> teams, etc.).</p>
       </div>
       <section class="service-information">
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom.png" alt="Логотип сайта">
-          <p class="service-information__card-paragraf">Kitchen with all<br><pre> equipment</pre></p>
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom.png"
+               alt="Логотип сайта">
+          <p class="service-information__card-paragraf">Kitchen with all<br> equipment
+          </p>
         </div>
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-2.png" alt="Логотип сайта">
-          <p class="service-information__card-paragraf"><br>One-tap WiFi<pre> access</pre></p>
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-2.png"
+               alt="Логотип сайта">
+          <p class="service-information__card-paragraf">One-tap <br> WiFi access
+          </p>
         </div>
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-3.png" alt="Логотип сайта">
-          <p class="service-information__card-paragraf">Round-the-clock<br><pre> support</pre></p>
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-3.png"
+               alt="Логотип сайта">
+          <p class="service-information__card-paragraf">Round-the-clock<br> support
+          </p>
         </div>
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-4.png" alt="Логотип сайта">
-          <p class="service-information__card-paragraf">Request late<br><pre> checkout</pre></p>
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-4.png"
+               alt="Логотип сайта">
+          <p class="service-information__card-paragraf">Request late<br> checkout
+          </p>
         </div>
       </section>
     </div>
@@ -61,11 +75,11 @@ export default {
 <style scoped lang="less">
 
 .body-main {
-  height: 2500px;
+  height: 3000px;
   width: 100%;
 }
 
-.apartments{
+.apartments {
   display: flex;
 
 }
@@ -79,37 +93,43 @@ export default {
 
 .apartments-cards-name {
   font-size: 70px;
-  font-family: SansSerif,serif;
+  font-family: SansSerif, serif;
   margin-left: 190px;
   padding-top: 160px;
 }
-.text{
+
+.text {
   display: flex;
   margin-left: 190px;
   padding-top: 160px;
 }
+
 .text-logo {
   font-size: 70px;
-  font-family: SansSerif,serif;
+  font-family: SansSerif, serif;
   display: flex;
 }
+
 .text-logo-down {
   font-size: 70px;
-  font-family: SansSerif,serif;
+  font-family: SansSerif, serif;
   margin-left: 190px;
 }
-.text-right-logo{
+
+.text-right-logo {
   font-size: 20px;
   margin-left: 208px;
   margin-top: 15px;
   line-height: 35px;
   color: #022E40;
 }
-.apartments__cards-text  {
+
+.apartments__cards-text {
   margin-left: 190px;
   padding-top: 10px;
   font-size: 27px;
 }
+
 .apartments__slider-btn-size {
   height: 80px;
   width: 80px;
@@ -128,30 +148,37 @@ export default {
 .apartments__slider-btn--right {
   margin-left: 25px;
 }
-.service-information{
+
+.service-information {
   display: flex;
   justify-content: space-evenly;
   margin-top: 80px;
   margin-left: 110px;
   background: transparent;
   font-size: 20px;
-  font-family: Ar,sans-serif;
-  &__card{
+  font-family: Ar, sans-serif;
+
+  &__card {
     height: 330px;
-    width:  350px;
+    width: 350px;
     background-color: white;
-    &-paragraf{
-      margin-left: 120px;
+    line-height: 40px;
+
+    &-paragraf {
+      text-align: center;
 
     }
-    &:nth-child(1){
+
+    &:nth-child(1) {
       border-top-left-radius: 90px;
     }
-    &:nth-child(4){
+
+    &:nth-child(4) {
       border-bottom-right-radius: 90px;
     }
-    &-image{
-      text-align-all:center;
+
+    &-image {
+      text-align-all: center;
       margin-left: 140px;
       margin-top: 90px;
     }

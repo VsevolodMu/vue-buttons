@@ -6,7 +6,7 @@
       </h4>
       <div class="card__plate-paragraph">
         <p class="card__plate-paragraph-price">
-          $157
+          ${{ cardArray[currentIndex]['price'] }}
         </p>
         <p class="card__plate-paragraph-value">
           usd/Night
@@ -15,20 +15,34 @@
     </div>
     <div class="card__info">
       <div class="card__info-name">
-        Trejo Beautiful Escape
+        {{ cardArray[currentIndex]['name'] }}
       </div>
       <div class="card__info-location">
-        Mexico Greenway 21 k
+        {{ cardArray[currentIndex]['place'] }}
       </div>
       <div class="card__info-rooms">
-        4 Guests | 2 Bedrooms | 2 Bathrooms
+        {{ cardArray[currentIndex]['guests'] + ' Guests | ' + cardArray[currentIndex]['bedrooms'] + ' Bedrooms | ' +cardArray[currentIndex]['bathrooms'] + ' Bathrooms ' }}
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {name: 'BodyPriceCard'}
+
+export default {
+  name: 'BodyPriceCard',
+  props: {
+    currentIndex: {
+      type: Number,
+      required: 'true'
+    },
+    cardArray: {
+      type: Array,
+      required: 'true'
+    }
+  }
+}
+
 </script>
 
 <style scoped lang="less">
@@ -77,7 +91,8 @@ export default {name: 'BodyPriceCard'}
   margin-top: 370px;
   color: #022E40;
   font-size: 23px;
-  font-family: SansSerif,serif;
+  font-family: SansSerif, serif;
+
   &-location {
     margin-top: 5px;
   }
