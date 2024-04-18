@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="body-main">
       <h2 class="apartments-cards-name">Top 10 apartments</h2>
       <div class="apartments">
@@ -17,16 +16,24 @@
           <br> a long term bosis, and we can accommodate all kinds of travelers (individuals, families,
         <br> teams, etc.).</h2>
       </div>
+      <BodyPriceCard
+          v-for="(card, index) in getApartmentsCardStore"
+          :key="index"
+      />
     </div>
-    <BodyPriceCard/>
-  </div>
 </template>
 
 <script>
 import BodyPriceCard from "@/components/pages/blogEzhkovBaryshev/components/BodyPriceCard.vue";
+import {mapGetters} from "vuex";
 
 export default {
-  components: {BodyPriceCard}
+  components: {BodyPriceCard},
+  computed: {
+    ...mapGetters('ApartmentsCardStore' [
+        'getApartmentsCardStore'
+        ])
+  }
 }
 </script>
 

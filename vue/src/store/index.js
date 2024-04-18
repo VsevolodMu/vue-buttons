@@ -1,4 +1,6 @@
 import modals from './modals'
+import BackgroundCardStore from "@/store/blogEzhkovBaryshev/BackgroundCardStore";
+import ApartmentsCardStore from "@/store/blogEzhkovBaryshev/ApartmentsCardStore";
 
 export default {
   namespaced: true,
@@ -6,6 +8,8 @@ export default {
   getters: {},
   mutations: {},
   modules: {
-    modals
+    modals,
+    BackgroundCardStore,
+    ApartmentsCardStore
   }
 }
