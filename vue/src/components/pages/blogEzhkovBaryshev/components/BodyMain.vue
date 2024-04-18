@@ -2,6 +2,16 @@
   <div>
     <div class="body-main">
       <h2 class="apartments-cards-name">Top 10 apartments</h2>
+      <div class="container">
+        <input placeholder='Search...' class='js-search' type="text">
+        <i class="fa fa-search"></i>
+      </div>
+
+      <div class="social">
+        <a href="https://twitter.com/StefCharle" target="_blank">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149103/twitter.svg" alt="">
+        </a>
+      </div>
       <div class="apartments">
         <p class="apartments__cards-text">From a room for a night to a loft for as long like, there's a RoamStay for
           every
@@ -184,4 +194,5 @@ export default {
     }
   }
 }
+
 </style>
