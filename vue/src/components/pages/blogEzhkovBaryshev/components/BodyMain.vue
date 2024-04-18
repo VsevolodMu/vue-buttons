@@ -9,7 +9,11 @@
           <button class="apartments__slider-btn-size apartments__slider-btn--right">&gt;</button>
         </div>
       </div>
-      <BodyPriceCard/>
+      <div class="card-list"
+      >
+        <BodyPriceCard            v-for="(card, index) in getApartmentsCardStore"
+                                  :key="index"/>
+      </div>
       <div class="text">
         <h2 class="text-logo">Conveniences<br>of our service</h2>
         <h2 class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate all
@@ -27,9 +31,9 @@ import {mapGetters} from "vuex";
 export default {
   components: {BodyPriceCard},
   computed: {
-    ...mapGetters('ApartmentsCardStore' [
-        'getApartmentsCardStore'
-        ])
+    ...mapGetters('ApartmentsCardStore', [
+      'getApartmentsCardStore'
+    ])
   }
 }
 </script>
@@ -37,13 +41,20 @@ export default {
 <style scoped lang="less">
 
 .body-main {
-  height: 1880px;
+  height: 2500px;
   width: 100%;
 }
 
 .apartments{
   display: flex;
 
+}
+
+.card-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .apartments-cards-name {

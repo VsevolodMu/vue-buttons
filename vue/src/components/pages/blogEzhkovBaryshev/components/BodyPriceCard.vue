@@ -33,6 +33,8 @@ export default {name: 'BodyPriceCard'}
 
 <style scoped lang="less">
 .card {
+  margin-left: 50px;
+  margin-bottom: 200px;
   height: 425px;
   width: 480px;
   background-image: url("https://sun9-30.userapi.com/impg/YQ0xW6F1GkV2-Yn6lO9VBlVJUfvKMQNZuspQQQ/8wUYBaP2IgA.jpg?size=1080x967&quality=95&sign=367cdc981841c1a936d18cabdca30e6f&type=album");
