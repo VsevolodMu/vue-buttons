@@ -9,14 +9,14 @@
           <button class="apartments__slider-btn-size apartments__slider-btn--right">&gt;</button>
         </div>
       </div>
+      <BodyPriceCard/>
       <div class="text">
         <h2 class="text-logo">Conveniences<br>of our service</h2>
         <h2 class="text-right-logo">We can host guests on a daily bosis or on a long term bosis, and we can accommodate all
           <br> kinds of travelers (individuals, families, teams, etc.). We can host guests on a daily bosis or on
           <br> a long term bosis, and we can accommodate all kinds of travelers (individuals, families,
-        <br> teams, etc.).</h2>
+          <br> teams, etc.).</h2>
       </div>
-      <BodyPriceCard/>
     </div>
 </template>
 
