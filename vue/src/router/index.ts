@@ -4,6 +4,7 @@ import HomePage from '../components/pages/Home.vue'
 import { RouteNames } from './routes'
 import HomePageEzhkovBaryshev from "@/components/pages/blogEzhkovBaryshev/pages/HomePageEzhkovBaryshev.vue";
 import AddApartmentsCard from "@/components/pages/blogEzhkovBaryshev/pages/AddApartmentsCard.vue";
+import ApartmentsPage from "@/components/pages/blogEzhkovBaryshev/pages/ApartmentsPage.vue";
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,6 +22,11 @@ const routes = [
     path: '/home_page_ezhkov_baryshev/add',
     name: RouteNames.ADDAPARTMENTSCARD,
     component: AddApartmentsCard
+  },
+  {
+    path: '/home_page_ezhkov_baryshev/aboba',
+    name: RouteNames.APARTMENTSPAGE,
+    component: ApartmentsPage
   }
 ]
 
