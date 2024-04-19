@@ -51,107 +51,110 @@ export default {
 <style scoped lang="less">
 
 
-.header__flex {
-  display: flex;
-}
+.header {
 
-.header__logo {
-  display: flex;
-  margin-left: 190px;
-  margin-top: 38px;
-  &--img {
-    height: 40px;
-    padding-right: 25px;
+  &__line {
+    height: 1px;
+    margin-top: 20px;
+    background-color: white;
   }
-}
 
-.header__right-buttons {
-  background: transparent;
-  margin-top: 30px;
-}
+  &__flex {
+    display: flex;
+  }
 
-.header-list {
-  list-style-type: none;
-  display: flex;
-  &__first {
-    padding-right: 32px;
-    &-button {
-      height: 45px;
-      width: 80px;
-      margin-left: 725px;
-      border-radius: 20px;
-      border-color: white;
-      position: relative;
-      border-style: solid;
-      margin-top: -5px;
+  &__logo {
+    display: flex;
+    margin-left: 190px;
+    margin-top: 38px;
+
+    &--img {
+      height: 40px;
+      padding-right: 25px;
+    }
+  }
+
+  &__right-buttons {
+    background: transparent;
+    margin-top: 30px;
+  }
+
+  &-list {
+    list-style-type: none;
+    display: flex;
+
+    &__first {
+      padding-right: 32px;
+
+      &-button {
+        height: 45px;
+        width: 80px;
+        margin-left: 725px;
+        border-radius: 20px;
+        border-color: white;
+        position: relative;
+        border-style: solid;
+        margin-top: -5px;
+        color: white;
+        background: transparent;
+
+        &::before {
+          font-size: 18px;
+          content: 'EN ᐁ';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 8px;
+        }
+      }
+    }
+
+    &__link {
+      font-size: 25px;
       color: white;
-      background: transparent;
+    }
+
+    &__second {
+      padding-right: 60px;
+    }
+
+    &__third {
+      padding-right: 22px;
+    }
+
+    &__second-button {
+      margin-top: -15px;
+      height: 60px;
+      width: 136px;
+      border-radius: 30px;
+      position: relative;
+      border-style: none;
+      background: #D9354B;
 
       &::before {
-        font-size: 18px;
-        content: 'EN ᐁ';
+        font-size: 24px;
+        color: white;
+        content: 'Sign up';
         width: 100%;
         height: 100%;
         position: absolute;
         right: 0;
-        top: 8px;
+        top: 14px;
       }
+    }
 
+    &__fourth {
+      padding-right: 45px;
+    }
+
+    &__fifth {
+      margin-top: -15px;
+    }
+
+    &__menu-symbol {
+      font-size: 50px;
     }
   }
 }
-.header-list__link {
-  font-size: 25px;
-  color: white;
-}
-
-.header-list__second {
-  padding-right: 60px;
-}
-
-
-.header-list__third {
-  padding-right: 22px;
-}
-
-.header-list__second-button {
-  margin-top: -15px;
-  height: 60px;
-  width: 136px;
-  border-radius: 30px;
-  position: relative;
-  border-style: none;
-  background: #D9354B;
-
-  &::before {
-    font-size: 24px;
-    color: white;
-    content: 'Sign up';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 14px;
-  }
-}
-
-.header-list__fourth {
-  padding-right: 45px;
-}
-
-.header-list__fifth {
-  margin-top: -15px;
-}
-
-.header-list__menu-symbol {
-  font-size: 50px;
-}
-
-.header__line {
-  height: 1px;
-  margin-top: 20px;
-  background-color: white;
-
-}
-
 </style>

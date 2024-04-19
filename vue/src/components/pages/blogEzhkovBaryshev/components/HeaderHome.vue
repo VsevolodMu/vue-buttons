@@ -70,20 +70,23 @@ export default {
   }
 }
 
-.slider-header-text {
-  margin-top: 195px;
-  text-align: center;
-  font-size: 80px;
-  color: white;
-  font-family: SansSerif, serif;
+.slider {
+  &-header-text {
+    margin-top: 195px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-family: SansSerif, serif;
+  }
+
+  &-paragraph-text {
+    margin-top: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: SansSerif, serif;
+  }
 }
 
-.slider-paragraph-text {
-  margin-top: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 25px;
-  color: white;
-  font-family: SansSerif, serif;
-}
 </style>

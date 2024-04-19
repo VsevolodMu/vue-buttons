@@ -64,7 +64,6 @@
 </template>
 <style>
 .footer {
-
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +75,7 @@
   font-family: "Calibri", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
+
   &-flex {
     display: flex;
   }

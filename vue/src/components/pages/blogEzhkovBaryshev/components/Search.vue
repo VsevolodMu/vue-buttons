@@ -53,85 +53,81 @@ export default {name: 'HomeSearch'}
   border-radius: 60px;
 }
 
-.search-list__item-margin {
-  padding-top: 25px;
-}
-
-
-.search-list--size {
-  font-size: 25px;
-}
-
-
-.search-list__paragraph--size {
-  margin-top: 5px;
-  font-size: 22px;
-}
-
 .search-list {
   display: flex;
   list-style: none;
+
+  &__items:first-child {
+    margin-left: 20px;
+  }
+
+  &__items:nth-child(n+2) {
+    margin-left: 150px;
+  }
+
+  &__items:nth-child(n+1)::before {
+    margin-left: 150px;
+  }
+
+  &__left-border-column::before {
+    position: absolute;
+    width: 3px;
+    top: 7px;
+    height: 65px;
+    left: -35px;
+    background: #022E40;
+    border-radius: 1px;
+    content: "";
+  }
+
+  &__counter {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 59px;
+
+    &-btn-size {
+      height: 35px;
+      width: 35px;
+      border-radius: 20px;
+      font-size: 25px;
+      border-color: transparent;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    &-search {
+      margin-top: 27px;
+      margin-left: 17px;
+
+      &-btn {
+        background: #D9354B;
+        height: 75px;
+        width: 75px;
+        border-radius: 100%;
+        border-color: transparent;
+        background-image: url("../images/SearchLoop.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px 50px;
+      }
+    }
+  }
+
+  &__left-border-column {
+    position: relative;
+  }
+
+  &__item-margin {
+    padding-top: 25px;
+  }
+
+  &--size {
+    font-size: 25px;
+  }
+
+  &__paragraph--size {
+    margin-top: 5px;
+    font-size: 22px;
+  }
 }
-
-.search-list__items:first-child {
-  margin-left: 20px;
-}
-
-.search-list__items:nth-child(n+2) {
-  margin-left: 150px;
-}
-
-.search-list__left-border-column {
-  position: relative;
-}
-
-.search-list__left-border-column::before {
-  position: absolute;
-  width: 3px;
-  top: 7px;
-  height: 65px;
-  left: -35px;
-  background: #022E40;
-  border-radius: 1px;
-  content: "";
-}
-
-.search-list__items:nth-child(n+1)::before {
-  margin-left: 150px;
-}
-
-.search-list__counter {
-  display: flex;
-  margin-left: 50px;
-  margin-top: 59px;
-}
-
-.search-list__counter-btn-size {
-  height: 35px;
-  width: 35px;
-  border-radius: 20px;
-  font-size: 25px;
-  border-color: transparent;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.search-list__counter-search {
-  margin-top: 27px;
-  margin-left: 17px;
-}
-
-.search-list__counter-search-btn {
-  background: #D9354B;
-  height: 75px;
-  width: 75px;
-  border-radius: 100%;
-  border-color: transparent;
-  background-image: url("../images/SearchLoop.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50px 50px;
-}
-
-
 </style>

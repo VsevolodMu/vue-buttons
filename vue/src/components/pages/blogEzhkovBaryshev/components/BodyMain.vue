@@ -122,6 +122,37 @@ export default {
 .apartments {
   display: flex;
 
+  &-cards-name {
+    font-size: 70px;
+    font-family: SansSerif, serif;
+    margin-left: 190px;
+    padding-top: 160px;
+    width: 600px;
+  }
+
+  &__cards-text {
+    margin-left: 190px;
+    padding-top: 10px;
+    font-size: 27px;
+  }
+
+  &__slider-btn {
+    &--right {
+      margin-left: 25px;
+    }
+
+    &-size {
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
+      border-color: transparent;
+      background: #022E40;
+      margin-top: -10px;
+      font-size: 35px;
+      color: white;
+    }
+  }
+
   &__button-add {
     margin-left: 100px;
     margin-top: 30px;
@@ -137,40 +168,43 @@ export default {
   }
 }
 
-.search-wrapper-block {
-  display: flex;
-  margin-left: 80px;
-  margin-bottom: 100px;
-}
-
-.search-block {
-  width: 1000px;
-  margin-top: 180px;
-
-  &__form {
-    width: 600px;
-    height: 50px;
+.search {
+  &-wrapper-block {
     display: flex;
-    margin: 0 auto;
+    margin-left: 80px;
+    margin-bottom: 100px;
   }
 
-  &__text {
-    width: calc(100% - 54px);
-    height: auto;
-    background-color: #c1c1c1;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border: 0;
-    padding-left: 15px;
-  }
+  &-block {
+    width: 1000px;
+    margin-top: 180px;
 
-  &__submit {
-    background: url("https://img.icons8.com/ffffff/search") center center/50% auto no-repeat #D9354B;
-    border: 0;
-    width: 54px;
-    height: auto;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    &__form {
+      width: 600px;
+      height: 50px;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    &__text {
+      width: calc(100% - 54px);
+      height: auto;
+      background-color: #c1c1c1;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border: 0;
+      padding-left: 15px;
+    }
+
+    &__submit {
+      background: url("https://img.icons8.com/ffffff/search") center center/50% auto no-repeat #D9354B;
+      border: 0;
+      width: 54px;
+      height: auto;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
   }
 }
 
@@ -181,56 +215,31 @@ export default {
   justify-content: space-evenly;
 }
 
-.apartments-cards-name {
-  font-size: 70px;
-  font-family: SansSerif, serif;
-  margin-left: 190px;
-  padding-top: 160px;
-  width: 600px;
-}
 
 .text {
   display: flex;
   margin-left: 190px;
   padding-top: 160px;
-}
 
-.text-logo {
-  font-size: 70px;
-  font-family: SansSerif, serif;
-  display: flex;
-  &-down {
+  &-right-logo {
+    font-size: 20px;
+    margin-left: 208px;
+    margin-top: 15px;
+    line-height: 35px;
+    color: #022E40;
+  }
+
+  &-logo {
     font-size: 70px;
     font-family: SansSerif, serif;
-    margin-left: 190px;
+    display: flex;
+
+    &-down {
+      font-size: 70px;
+      font-family: SansSerif, serif;
+      margin-left: 190px;
+    }
   }
-}
-.text-right-logo {
-  font-size: 20px;
-  margin-left: 208px;
-  margin-top: 15px;
-  line-height: 35px;
-  color: #022E40;
-}
-.apartments__cards-text {
-  margin-left: 190px;
-  padding-top: 10px;
-  font-size: 27px;
-}
-
-.apartments__slider-btn-size {
-  height: 80px;
-  width: 80px;
-  border-radius: 100%;
-  border-color: transparent;
-  background: #022E40;
-  margin-top: -10px;
-  font-size: 35px;
-  color: white;
-}
-
-.apartments__slider-btn--right {
-  margin-left: 25px;
 }
 
 .service-information {
