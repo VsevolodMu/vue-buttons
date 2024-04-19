@@ -2,8 +2,8 @@
   <div class="footer">
     <div class="footer-flex">
       <div class="footer-logo">
-        <img class="footer-logo__img" src="../images/Logo.svg" alt="Логотип сайта">
-        <h2 class="footer-logo__text">RoamStay</h2>
+        <img class="footer-image" src="../images/Logo.svg" alt="Логотип сайта">
+        <h2 class="footer-text">RoamStay</h2>
         <section class="footer__middle-buttons">
           <ul class="footer-list">
             <li class="footer-list__item footer-list__first">
@@ -29,10 +29,10 @@
               <a href="#Check_in" class="footer-list__link">Social</a>
             </li>
             <li class="footer-list__item footer-list__second">
-              <img class="footer-logo__img" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
+              <img class="footer-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
                    alt="Логотип сайта">
-              <img class="footer-logo__img" src="../images/instagram-icon.jpg" alt="Логотип сайта">
-              <img class="footer-logo__img" src="../images/twitter-icon.png" alt="Логотип сайта">
+              <img class="footer-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
+              <img class="footer-image" src="../images/twitter-icon.png" alt="Логотип сайта">
             </li>
             <li class="footer-list__item footer-list__third">
               <a href="#Log In" class="footer-list__link">Language</a>
@@ -76,10 +76,9 @@
   font-family: "Calibri", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
-}
-
-.footer-flex {
-  display: flex;
+  &-flex {
+    display: flex;
+  }
 }
 
 .footer-logo {
@@ -88,13 +87,13 @@
   margin-bottom: 90px;
 }
 
-.footer-logo__img {
+.footer-image {
   margin-top: 30px;
   height: 40px;
   padding-right: 25px;
 }
 
-.footer-logo__text {
+.footer-text {
   margin-top: 30px;
   color: white;
   font-size: 33px;
