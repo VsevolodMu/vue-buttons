@@ -85,7 +85,8 @@ const state = {
 }
 
 const getters = {
-  getApartmentsCardStore: state => state.ApartmentsCardStore
+  getApartmentsCardStore: state => state.ApartmentsCardStore,
+  getFilteredApartmentsCardStore: state => finder=> state.ApartmentsCardStore.filter(ApartmentsCardStore => ApartmentsCardStore.name.toLowerCase().includes(finder.toLowerCase()))
 }
 
 export default {

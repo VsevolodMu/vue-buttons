@@ -6,7 +6,7 @@
       </h4>
       <div class="card__plate-paragraph">
         <p class="card__plate-paragraph-price">
-          ${{ cardArray[currentIndex]['price'] }}
+          ${{ price }}
         </p>
         <p class="card__plate-paragraph-value">
           usd/Night
@@ -15,13 +15,13 @@
     </div>
     <div class="card__info">
       <div class="card__info-name">
-        {{ cardArray[currentIndex]['name'] }}
+        {{ name}}
       </div>
       <div class="card__info-location">
-        {{ cardArray[currentIndex]['place'] }}
+        {{ place}}
       </div>
       <div class="card__info-rooms">
-        {{ cardArray[currentIndex]['guests'] + ' Guests | ' + cardArray[currentIndex]['bedrooms'] + ' Bedrooms | ' +cardArray[currentIndex]['bathrooms'] + ' Bathrooms ' }}
+        {{ guests + ' Guests | ' + bedrooms + ' Bedrooms | ' + bathrooms + ' Bathrooms ' }}
       </div>
     </div>
   </div>
@@ -39,6 +39,34 @@ export default {
     cardArray: {
       type: Array,
       required: 'true'
+    },
+    id: {
+      type: Number,
+      require: 'true'
+    },
+    name: {
+      type: String,
+      require: 'true'
+    },
+    price: {
+      type: Number,
+      require: 'true'
+    },
+    guests: {
+      type: Number,
+      require: 'true'
+    },
+    bedrooms: {
+      type: Number,
+      require: 'true'
+    },
+    bathrooms: {
+      type: Number,
+      require: 'true'
+    },
+    place: {
+      type: String,
+      require: 'true'
     }
   }
 }

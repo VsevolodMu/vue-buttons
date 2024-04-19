@@ -1,10 +1,15 @@
 <template>
   <div>
     <div class="body-main">
-      <h2 class="apartments-cards-name">Top 10 apartments</h2>
-      <div class="container">
-        <input placeholder='Search...' class='js-search' type="text">
-        <i class="fa fa-search"></i>
+      <div class="search-wrapper-block">
+        <h2 class="apartments-cards-name">Top 10 apartments</h2>
+
+        <div class="search-block">
+          <form class="search-block__form">
+            <input type="text" name= "text" class="search-block__text" placeholder="Поиск" v-model="searchRequest">
+            <input type="submit" name="submit" class="search-block__submit" value="">
+          </form>
+        </div>
       </div>
 
       <div class="social">
@@ -24,10 +29,18 @@
       <div class="card-list"
       >
         <BodyPriceCard
-            v-for="(card, index) in getApartmentsCardStore"
+            v-for="(card, index) in getFilteredCard"
             :key="index"
             :currentIndex="index"
-            :cardArray="getApartmentsCardStore"/>
+            :cardArray="getApartmentsCardStore"
+            :id="card.id"
+            :name="card.name"
+            :price="card.price"
+            :guests="card.guests"
+            :bedrooms="card.bedrooms"
+            :bathrooms="card.bathrooms"
+            :place="card.place"
+        />
 
       </div>
       <div class="text">
@@ -74,10 +87,19 @@ import {mapGetters} from "vuex";
 
 export default {
   components: {BodyPriceCard},
+  data(){
+    return {
+      searchRequest: ''
+    }
+  },
   computed: {
     ...mapGetters('ApartmentsCardStore', [
-      'getApartmentsCardStore'
-    ])
+      'getApartmentsCardStore',
+      'getFilteredApartmentsCardStore'
+    ]),
+    getFilteredCard() {
+      return this.getFilteredApartmentsCardStore(this.searchRequest)
+    }
   }
 }
 </script>
@@ -85,13 +107,49 @@ export default {
 <style scoped lang="less">
 
 .body-main {
-  height: 3000px;
+  height: 3100px;
   width: 100%;
 }
 
 .apartments {
   display: flex;
+}
 
+.search-wrapper-block {
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.search-block {
+  width: 1000px;
+  margin-top: 180px;
+  &__form{
+    width: 600px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__text {
+    width: calc(100% - 54px);
+    height: auto;
+    background-color: #c1c1c1;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 0;
+    padding-left: 15px;
+  }
+
+  &__submit {
+    background: url("https://img.icons8.com/ffffff/search") center center/50% auto
+    no-repeat #D9354B;
+    border: 0;
+    width: 54px;
+    height: auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 }
 
 .card-list {
@@ -106,6 +164,7 @@ export default {
   font-family: SansSerif, serif;
   margin-left: 190px;
   padding-top: 160px;
+  width: 600px;
 }
 
 .text {
