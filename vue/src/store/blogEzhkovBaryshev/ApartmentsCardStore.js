@@ -1,5 +1,5 @@
 const state = {
-  ApartmentsCardStore: [
+  ApartmentsCardStoreData: [
     {
       id: 1,
       name: "Trejo Beautiful Escape",
@@ -8,6 +8,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 2,
       place: "Mexico Greenway 21 k",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 1,
       place: "Atlanta Sorich 11 a",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 1,
       place: "Atlanta Sorich 11 a",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 5,
@@ -44,6 +48,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 6,
@@ -53,6 +58,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 4,
@@ -62,6 +68,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 1,
       place: "Atlanta Sorich 11 a",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 5,
@@ -71,6 +78,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     },
     {
       id: 6,
@@ -80,17 +88,30 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
     }
   ]
 }
 
 const getters = {
-  getApartmentsCardStore: state => state.ApartmentsCardStore,
-  getFilteredApartmentsCardStore: state => finder=> state.ApartmentsCardStore.filter(ApartmentsCardStore => ApartmentsCardStore.name.toLowerCase().includes(finder.toLowerCase()))
+  getApartmentsCardStore: state => state.ApartmentsCardStoreData,
+  getFilteredApartmentsCardStore: state => finder=> state.ApartmentsCardStoreData.filter(ApartmentsCardStore => ApartmentsCardStore.name.toLowerCase().includes(finder.toLowerCase()))
+}
+const mutations = {
+  addSmallCard: (state, newCard) => {
+    state.ApartmentsCardStoreData.push(newCard)
+  }
+}
+const actions = {
+  addSmallCard: ({commit}, newCard) => {
+    commit('addSmallCard', newCard)
+  }
 }
 
 export default {
   namespaced: true,
   state,
-  getters
+  getters,
+  mutations,
+  actions
 }
