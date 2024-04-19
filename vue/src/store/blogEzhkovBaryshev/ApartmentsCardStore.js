@@ -22,7 +22,7 @@ const state = {
     },
     {
       id: 3,
-      name: "Bomj Edition",
+      name: "Roof Hotel",
       price: 150,
       guests: 1,
       bedrooms: 1,
@@ -32,7 +32,7 @@ const state = {
     },
     {
       id: 4,
-      name: "Super Sea",
+      name: "Home Hotel",
       price: 225,
       guests: 3,
       bedrooms: 2,
@@ -42,7 +42,7 @@ const state = {
     },
     {
       id: 5,
-      name: "Bomj Edition",
+      name: "Emerald Hotel",
       price: 150,
       guests: 1,
       bedrooms: 1,
@@ -52,7 +52,7 @@ const state = {
     },
     {
       id: 6,
-      name: "Bomj Edition",
+      name: "Hotel Beautiful City",
       price: 150,
       guests: 1,
       bedrooms: 1,
@@ -61,8 +61,8 @@ const state = {
       image: "https://mainadmin.novostroyki.shop/media/imagemanager/43242_ee445a56ae509627ddd968ecef5c63f1.jpg"
     },
     {
-      id: 4,
-      name: "Super Sea",
+      id: 7,
+      name: "Rooftop Hotel",
       price: 225,
       guests: 3,
       bedrooms: 2,
@@ -71,8 +71,8 @@ const state = {
       image: "https://design.pibig.info/uploads/posts/2023-03/1678914150_design-pibig-info-p-apartamenti-s-terrasoi-dizain-instagram-21.jpg"
     },
     {
-      id: 5,
-      name: "Bomj Edition",
+      id: 8,
+      name: "Hotel By The Sea",
       price: 150,
       guests: 1,
       bedrooms: 1,
@@ -81,8 +81,8 @@ const state = {
       image: "https://giak.ru/wp-content/uploads/2020/03/72d723c7749a098b2dc44323a43d8113.jpg"
     },
     {
-      id: 6,
-      name: "Bomj Edition",
+      id: 9,
+      name: "Big Hotel",
       price: 150,
       guests: 1,
       bedrooms: 1,
