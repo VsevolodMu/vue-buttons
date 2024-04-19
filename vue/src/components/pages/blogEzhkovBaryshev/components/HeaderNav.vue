@@ -59,11 +59,10 @@ export default {
   display: flex;
   margin-left: 190px;
   margin-top: 38px;
-}
-
-.header__logo--img {
-  height: 40px;
-  padding-right: 25px;
+  &--img {
+    height: 40px;
+    padding-right: 25px;
+  }
 }
 
 .header__right-buttons {
@@ -74,37 +73,33 @@ export default {
 .header-list {
   list-style-type: none;
   display: flex;
-}
+  &__first {
+    padding-right: 32px;
+    &-button {
+      height: 45px;
+      width: 80px;
+      margin-left: 725px;
+      border-radius: 20px;
+      border-color: white;
+      position: relative;
+      border-style: solid;
+      margin-top: -5px;
+      color: white;
+      background: transparent;
 
-.header-list__first {
-  padding-right: 32px;
-}
+      &::before {
+        font-size: 18px;
+        content: 'EN ᐁ';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 8px;
+      }
 
-.header-list__first-button {
-  height: 45px;
-  width: 80px;
-  margin-left: 725px;
-  border-radius: 20px;
-  border-color: white;
-  position: relative;
-  border-style: solid;
-  margin-top: -5px;
-  color: white;
-  background: transparent;
-
-  &::before {
-    font-size: 18px;
-    content: 'EN ᐁ';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 8px;
+    }
   }
-
 }
-
-
 .header-list__link {
   font-size: 25px;
   color: white;

@@ -199,14 +199,12 @@ export default {
   font-size: 70px;
   font-family: SansSerif, serif;
   display: flex;
+  &-down {
+    font-size: 70px;
+    font-family: SansSerif, serif;
+    margin-left: 190px;
+  }
 }
-
-.text-logo-down {
-  font-size: 70px;
-  font-family: SansSerif, serif;
-  margin-left: 190px;
-}
-
 .text-right-logo {
   font-size: 20px;
   margin-left: 208px;
@@ -214,7 +212,6 @@ export default {
   line-height: 35px;
   color: #022E40;
 }
-
 .apartments__cards-text {
   margin-left: 190px;
   padding-top: 10px;
