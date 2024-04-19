@@ -6,7 +6,7 @@
 
         <div class="search-block">
           <form class="search-block__form">
-            <input type="text" name= "text" class="search-block__text" placeholder="Поиск" v-model="searchRequest">
+            <input type="text" name="text" class="search-block__text" placeholder="Поиск" v-model="searchRequest">
             <input type="submit" name="submit" class="search-block__submit" value="">
           </form>
         </div>
@@ -92,7 +92,7 @@ import {RouteNames} from "@/router/routes";
 
 export default {
   components: {BodyPriceCard},
-  data(){
+  data() {
     return {
       searchRequest: ''
     }
@@ -105,9 +105,9 @@ export default {
     getFilteredCard() {
       return this.getFilteredApartmentsCardStore(this.searchRequest)
     },
-      routeNames () {
-        return RouteNames
-      }
+    routeNames() {
+      return RouteNames
+    }
   }
 }
 </script>
@@ -115,12 +115,13 @@ export default {
 <style scoped lang="less">
 
 .body-main {
-  height: 3100px;
+  height: 100%;
   width: 100%;
 }
 
 .apartments {
   display: flex;
+
   &__button-add {
     margin-left: 100px;
     margin-top: 30px;
@@ -129,7 +130,7 @@ export default {
     background-color: rgba(217, 53, 75, 0.9);
   }
 
-  &__slider{
+  &__slider {
     width: 170px;
     display: flex;
     margin-left: 200px;
@@ -145,7 +146,8 @@ export default {
 .search-block {
   width: 1000px;
   margin-top: 180px;
-  &__form{
+
+  &__form {
     width: 600px;
     height: 50px;
     display: flex;
@@ -163,8 +165,7 @@ export default {
   }
 
   &__submit {
-    background: url("https://img.icons8.com/ffffff/search") center center/50% auto
-    no-repeat #D9354B;
+    background: url("https://img.icons8.com/ffffff/search") center center/50% auto no-repeat #D9354B;
     border: 0;
     width: 54px;
     height: auto;

@@ -2,19 +2,19 @@
 const state = {
   BackgroundCardStore: [
     {
-      image: "https://travel-dom.ru/wp-content/uploads/2019/07/iStock-645374604.jpg"
+      image: "https://s0.rbk.ru/v6_top_pics/resized/1200xH/media/img/4/53/756069837119534.jpg"
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://static4.banki.ru/ugc/9c/bb/d5/6c/10993780.jpg"
     },
     {
-      image: "https://mebellka.ru/wp-content/uploads/b/7/5/b7568bf35260cb115edbad2cf0f0bd25.jpeg"
+      image: "https://s0.rbk.ru/v6_top_pics/media/img/6/75/754678189948756.jpeg"
     },
     {
-      image: "https://i.pinimg.com/originals/59/e0/9b/59e09b2791980e268d38ef3694be3a6e.jpg"
+      image: "https://static.news.ru/photo/1e0b066e-9b27-11ee-a3f5-02420a0000c9_1024.jpg"
     },
     {
-      image: "https://i.pinimg.com/originals/14/49/f5/1449f501d15e8f7ac7adf4fa54763786.jpg"
+      image: "https://b1.m24.ru/c/1926535.jpg"
     }
   ]
 }

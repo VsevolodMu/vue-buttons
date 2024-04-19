@@ -24,7 +24,7 @@ const routes = [
     component: AddApartmentsCard
   },
   {
-    path: '/home_page_ezhkov_baryshev/aboba',
+    path: '/home_page_ezhkov_baryshev/apartments/:id',
     name: RouteNames.APARTMENTSPAGE,
     component: ApartmentsPage
   }

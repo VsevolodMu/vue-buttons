@@ -1,26 +1,26 @@
 <template>
-  <div class="tour island-styles">
+  <div class="apartment">
     <HeaderNav/>
-    <div class="tour__card" :style="cardImage">
-      <h2 class="tour__card__title">
+    <div class="apartment__card" :style="cardImage">
+      <h2 class="apartment__card-name">
         {{ getApartmentsCardStore[$route.params.id]['name'] }}
       </h2>
-      <p class="tour__card__rating">
+      <p class="apartment__card-size">
         Price: {{ getApartmentsCardStore[$route.params.id]['price'] }} per night
       </p>
-      <p class="tour__card__price">
-        Quests: ${{ getApartmentsCardStore[$route.params.id]['guests'] }}
+      <p class="apartment__card-size">
+        Quests: {{ getApartmentsCardStore[$route.params.id]['guests'] }}
       </p>
-      <p class="tour__card__price">
-        Bedrooms: ${{ getApartmentsCardStore[$route.params.id]['bedrooms'] }}
+      <p class="apartment__card-size">
+        Bedrooms: {{ getApartmentsCardStore[$route.params.id]['bedrooms'] }}
       </p>
-      <p class="tour__card__price">
-        Bathrooms: ${{ getApartmentsCardStore[$route.params.id]['bathrooms'] }}
+      <p class="apartment__card-size">
+        Bathrooms: {{ getApartmentsCardStore[$route.params.id]['bathrooms'] }}
       </p>
-      <p class="tour__card__price">
-        Place: ${{ getApartmentsCardStore[$route.params.id]['place'] }}
+      <p class="apartment__card-size">
+        Place: {{ getApartmentsCardStore[$route.params.id]['place'] }}
       </p>
-      <button class="tour__card__book">BOOK NOW</button>
+      <button class="apartment__card-book">BOOK NOW</button>
     </div>
   </div>
 </template>
@@ -28,6 +28,7 @@
 <script>
 import {mapGetters} from "vuex";
 import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNav.vue";
+
 export default {
   name: "TourPage",
   components: {HeaderNav},
@@ -36,52 +37,55 @@ export default {
       'getApartmentsCardStore'
     ]),
     cardImage() {
-      return { backgroundImage: 'url(' + this.getApartmentsCardStore[this.$route.params.id]['image'] + ')' };
+      return {backgroundImage: 'url(' + this.getApartmentsCardStore[this.$route.params.id]['image'] + ')'};
     }
   }
 }
 </script>
 
 <style scoped lang="less">
-.tour {
-  padding: 20px 20px;
-  height: 100vh;
+.apartment {
   background-color: #88509d;
   display: flex;
   flex-direction: column;
+  color: chartreuse;
+  height: 100vh;
+
   &__card {
-    margin-top: 20px;
+    margin: 70px 250px 50px;
+    height: 400px;
+    font-size: 50px;
     padding: 10px 50px;
     flex: 1 1 auto;
     flex-direction: column;
     border-radius: 20px;
     background-size: cover;
     line-height: 130px;
-    &__title {
-      color: #fff;
+
+    &-size {
+      margin: 0;
+      padding: 0;
+    }
+
+    &-name {
+      color: #D9354B;
       font-size: 148px;
       text-align: center;
     }
-    &__rating {
-      color: #fff;
-      font-size: 96px;
-    }
-    &__price {
-      color: #fff;
-      font-size: 96px;
-    }
-    &__book {
+
+    &-book {
+      color: chartreuse;
       background: none;
-      color: #fff;
-      border: #fff solid 3px;
+      border: #D9354B solid 3px;
       border-radius: 20px;
       font-size: 48px;
       font-weight: 700;
       width: 30%;
       height: 10%;
+
       &:hover {
-        background: #fff;
-        color: #1a1e18;
+        color: #D9354B;
+
       }
     }
   }

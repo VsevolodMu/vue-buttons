@@ -1,33 +1,37 @@
 <template>
-  <div class="card" :style="cardImage">
-    <div class="card__plate">
-      <h4 class="card__plate-text">
-        Starting at
-      </h4>
-      <div class="card__plate-paragraph">
-        <p class="card__plate-paragraph-price">
-          ${{ price }}
-        </p>
-        <p class="card__plate-paragraph-value">
-          usd/Night
-        </p>
+  <RouterLink :to="{ name: routeNames.APARTMENTSPAGE, params: { id: currentIndex } }">
+    <div class="card" :style="cardImage">
+      <div class="card__plate">
+        <h4 class="card__plate-text">
+          Starting at
+        </h4>
+        <div class="card__plate-paragraph">
+          <p class="card__plate-paragraph-price">
+            ${{ price }}
+          </p>
+          <p class="card__plate-paragraph-value">
+            usd/Night
+          </p>
+        </div>
+      </div>
+      <div class="card__info">
+        <div class="card__info-name">
+          {{ name }}
+        </div>
+        <div class="card__info-location">
+          {{ place }}
+        </div>
+        <div class="card__info-rooms">
+          {{ guests + ' Guests | ' + bedrooms + ' Bedrooms | ' + bathrooms + ' Bathrooms ' }}
+        </div>
       </div>
     </div>
-    <div class="card__info">
-      <div class="card__info-name">
-        {{ name}}
-      </div>
-      <div class="card__info-location">
-        {{ place}}
-      </div>
-      <div class="card__info-rooms">
-        {{ guests + ' Guests | ' + bedrooms + ' Bedrooms | ' + bathrooms + ' Bathrooms ' }}
-      </div>
-    </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script>
+
+import {RouteNames} from "@/router/routes";
 
 export default {
   name: 'BodyPriceCard',
@@ -74,6 +78,9 @@ export default {
     }
   },
   computed: {
+    routeNames() {
+      return RouteNames
+    },
     cardImage() {
       return {backgroundImage: 'url(' + this.image + ')'}
     }

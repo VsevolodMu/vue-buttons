@@ -60,10 +60,11 @@
 <script>
 import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNav.vue";
 import {mapActions} from "vuex";
+
 export default {
   name: 'AddTourPage',
   components: {HeaderNav},
-  data () {
+  data() {
     return {
       id: '',
       name: '',
@@ -79,8 +80,8 @@ export default {
     ...mapActions('ApartmentsCardStore', [
       'addSmallCard'
     ]),
-    create () {
-      if (this.id === '' || this.name === '' || this.price === '' || this.guests === ''|| this.bedrooms === ''|| this.bathrooms === ''|| this.place === ''|| this.image === '')
+    create() {
+      if (this.id === '' || this.name === '' || this.price === '' || this.guests === '' || this.bedrooms === '' || this.bathrooms === '' || this.place === '' || this.image === '')
         alert('Данные введены некоректно')
       else {
         const newTour = {
@@ -115,6 +116,7 @@ export default {
   background-color: #88509d;
   display: flex;
   flex-direction: column;
+
   &__inputs {
     display: flex;
     flex: 1 1 auto;
@@ -122,17 +124,20 @@ export default {
     justify-content: space-around;
     align-items: center;
   }
+
   &__create-btn {
     align-self: center;
     width: 20%;
     background: none;
     border-radius: 10px;
     font-size: 58px;
+
     &:hover {
       backdrop-filter: brightness(50%);
     }
   }
 }
+
 .window {
   font-size: 48px;
   border-radius: 15px;

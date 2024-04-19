@@ -54,7 +54,8 @@ export default {
 
 <style scoped lang="less">
 .background-img {
-  background-image: url(../images/HeaderSliderImgFirst.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 1025px;
 }

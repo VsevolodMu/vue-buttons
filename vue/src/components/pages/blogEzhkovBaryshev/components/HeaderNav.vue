@@ -41,7 +41,7 @@ import {RouteNames} from "@/router/routes";
 export default {
   name: 'HeaderNav',
   computed: {
-    routeNames () {
+    routeNames() {
       return RouteNames
     }
   }

@@ -1,61 +1,62 @@
 <template>
   <div class="footer">
     <div class="footer-flex">
-    <div class="footer-logo">
-      <img class="footer-logo__img" src="../images/Logo.svg" alt="Логотип сайта">
-      <h2 class = "footer-logo__text" >RoamStay</h2>
-      <section class="footer__middle-buttons">
-        <ul class="footer-list">
-          <li class="footer-list__item footer-list__first">
-            <a href="#Check_in" class="footer-list__link">About us</a>
-          </li>
-          <li class="footer-list__item footer-list__second">
-            <a href="#Check_in" class="footer-list__link">Business and groups</a>
-          </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Support</a>
-          </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Responsibility</a>
-          </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Blog</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer__right-buttons">
-        <ul class="footer-list">
-          <li class="footer-list__item footer-list__first">
-            <a href="#Check_in" class="footer-list__link">Social</a>
-          </li>
-          <li class="footer-list__item footer-list__second">
-            <img class="footer-logo__img" src="../images/Facebook-Logo-Transparent-Background-PNG.png" alt="Логотип сайта">
-            <img class="footer-logo__img" src="../images/instagram-icon.jpg" alt="Логотип сайта">
-            <img class="footer-logo__img" src="../images/twitter-icon.png" alt="Логотип сайта">
-          </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Language</a>
-          </li>
+      <div class="footer-logo">
+        <img class="footer-logo__img" src="../images/Logo.svg" alt="Логотип сайта">
+        <h2 class="footer-logo__text">RoamStay</h2>
+        <section class="footer__middle-buttons">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__first">
+              <a href="#Check_in" class="footer-list__link">About us</a>
+            </li>
+            <li class="footer-list__item footer-list__second">
+              <a href="#Check_in" class="footer-list__link">Business and groups</a>
+            </li>
+            <li class="footer-list__item footer-list__third">
+              <a href="#Log In" class="footer-list__link">Support</a>
+            </li>
+            <li class="footer-list__item footer-list__third">
+              <a href="#Log In" class="footer-list__link">Responsibility</a>
+            </li>
+            <li class="footer-list__item footer-list__third">
+              <a href="#Log In" class="footer-list__link">Blog</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__right-buttons">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__first">
+              <a href="#Check_in" class="footer-list__link">Social</a>
+            </li>
+            <li class="footer-list__item footer-list__second">
+              <img class="footer-logo__img" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
+                   alt="Логотип сайта">
+              <img class="footer-logo__img" src="../images/instagram-icon.jpg" alt="Логотип сайта">
+              <img class="footer-logo__img" src="../images/twitter-icon.png" alt="Логотип сайта">
+            </li>
+            <li class="footer-list__item footer-list__third">
+              <a href="#Log In" class="footer-list__link">Language</a>
+            </li>
             <li class="footer-list__item header-list__first">
               <button class="footer-list__first-button"/>
             </li>
-        </ul>
-      </section>
-    </div>
+          </ul>
+        </section>
+      </div>
     </div>
     <section class="footer__down-buttons">
       <ul class="footer-list-down" style="display: flex; flex-direction: row;">
         <li>
-          <h3 class = "footer-logo__text-down-first" >⊞ 2021 RoamStay All night reserved</h3>
+          <h3 class="footer-logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
         </li>
         <li>
-          <h3 class = "footer-logo__text-down-second" >Terms of Service</h3>
+          <h3 class="footer-logo__text-down-second">Terms of Service</h3>
         </li>
         <li>
-          <h3 class = "footer-logo__text-down-third" >Privacy Policy</h3>
+          <h3 class="footer-logo__text-down-third">Privacy Policy</h3>
         </li>
         <li>
-          <h3 class = "footer-logo__text-down-fourth" >+1 665-555-5454</h3>
+          <h3 class="footer-logo__text-down-fourth">+1 665-555-5454</h3>
         </li>
       </ul>
     </section>
@@ -76,74 +77,90 @@
   font-size: 12px;
   letter-spacing: 1px;
 }
+
 .footer-flex {
   display: flex;
 }
+
 .footer-logo {
   display: flex;
   margin-left: 165px;
   margin-bottom: 90px;
 }
+
 .footer-logo__img {
   margin-top: 30px;
   height: 40px;
   padding-right: 25px;
 }
+
 .footer-logo__text {
   margin-top: 30px;
   color: white;
   font-size: 33px;
 }
+
 .footer-logo__text-down-first {
   margin-top: 1px;
   color: white;
   font-size: 17px;
 }
+
 .footer-logo__text-down-second {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 339px;
 }
+
 .footer-logo__text-down-third {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 68px;
 }
+
 .footer-logo__text-down-fourth {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 140px;
 }
-.footer__middle-buttons{
+
+.footer__middle-buttons {
   background: transparent;
   margin-left: 400px;
 }
-.footer__right-buttons{
+
+.footer__right-buttons {
   background: transparent;
   margin-left: 240px;
 }
+
 .footer-list {
   list-style-type: none;
-  &-down{
+
+  &-down {
     display: flex;
   }
 }
+
 .footer-list__item:nth-child(n+1) {
   margin-top: 35px;
 }
-.footer-list__link{
+
+.footer-list__link {
   color: white;
   font-size: 22px;
 }
-.footer__down-buttons{
+
+.footer__down-buttons {
   display: flex;
   background: transparent;
-  margin-top:-10px;
+  margin-top: -10px;
   margin-left: 115px;
 }
+
 .footer-list__first-button {
   height: 45px;
   width: 175px;
@@ -164,9 +181,10 @@
     right: 50px;
     top: 12px;
   }
-  &::after{
+
+  &::after {
     font-size: 20px;
-    content:'ᐁ';
+    content: 'ᐁ';
     width: 100%;
     height: 100%;
     position: absolute;

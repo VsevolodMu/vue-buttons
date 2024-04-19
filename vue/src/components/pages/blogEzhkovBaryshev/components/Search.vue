@@ -121,7 +121,7 @@ export default {name: 'HomeSearch'}
   margin-left: 17px;
 }
 
-.search-list__counter-search-btn{
+.search-list__counter-search-btn {
   background: #D9354B;
   height: 75px;
   width: 75px;
