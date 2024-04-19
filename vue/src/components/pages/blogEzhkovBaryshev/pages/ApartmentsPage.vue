@@ -6,7 +6,7 @@
         {{ getApartmentsCardStore[$route.params.id]['name'] }}
       </h2>
       <p class="tour__card__rating">
-        Price: {{ getApartmentsCardStore[$route.params.id]['price'] }} per person
+        Price: {{ getApartmentsCardStore[$route.params.id]['price'] }} per night
       </p>
       <p class="tour__card__price">
         Quests: ${{ getApartmentsCardStore[$route.params.id]['guests'] }}
