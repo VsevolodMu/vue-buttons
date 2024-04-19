@@ -8,7 +8,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 2,
       place: "Mexico Greenway 21 k",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://skyview.ru/upload/resize_cache/iblock/f49/1148_700_1/pve10j7i8j7pd3lgrip8ogubdyb9m9dr.webp"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 1,
       place: "Atlanta Sorich 11 a",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://s7.stc.all.kpcdn.net/family/wp-content/uploads/2022/11/top-chto-takoe-apartamenty-960x540-1-960x540.jpg"
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://novostroycity.ru/uploads/journal_entries/1602508947.jpg"
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 1,
       place: "Atlanta Sorich 11 a",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://www.palladaran.ru/uploads/images/apartamenty-v-gostinice.jpg"
     },
     {
       id: 5,
@@ -48,7 +48,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://content.cdn-cian.ru/realty/articles/content/36585/3982790.jpg"
     },
     {
       id: 6,
@@ -58,7 +58,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://mainadmin.novostroyki.shop/media/imagemanager/43242_ee445a56ae509627ddd968ecef5c63f1.jpg"
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ const state = {
       bedrooms: 2,
       bathrooms: 1,
       place: "Atlanta Sorich 11 a",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://design.pibig.info/uploads/posts/2023-03/1678914150_design-pibig-info-p-apartamenti-s-terrasoi-dizain-instagram-21.jpg"
     },
     {
       id: 5,
@@ -78,7 +78,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://giak.ru/wp-content/uploads/2020/03/72d723c7749a098b2dc44323a43d8113.jpg"
     },
     {
       id: 6,
@@ -88,7 +88,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Lonely_Planet.jpg"
+      image: "https://design.pibig.info/uploads/posts/2023-03/1678914161_design-pibig-info-p-apartamenti-s-terrasoi-dizain-instagram-2.jpg"
     }
   ]
 }

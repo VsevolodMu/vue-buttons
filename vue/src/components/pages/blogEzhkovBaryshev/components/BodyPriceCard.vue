@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" :style="cardImage">
     <div class="card__plate">
       <h4 class="card__plate-text">
         Starting at
@@ -67,6 +67,15 @@ export default {
     place: {
       type: String,
       require: 'true'
+    },
+    image: {
+      type: String,
+      require: 'true',
+    }
+  },
+  computed: {
+    cardImage() {
+      return {backgroundImage: 'url(' + this.image + ')'}
     }
   }
 }
@@ -79,9 +88,9 @@ export default {
   margin-bottom: 200px;
   height: 425px;
   width: 480px;
-  background-image: url("https://sun9-30.userapi.com/impg/YQ0xW6F1GkV2-Yn6lO9VBlVJUfvKMQNZuspQQQ/8wUYBaP2IgA.jpg?size=1080x967&quality=95&sign=367cdc981841c1a936d18cabdca30e6f&type=album");
-  background-position: center;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
   color: rgba(255, 255, 255, 0.8);
 
   &__plate {

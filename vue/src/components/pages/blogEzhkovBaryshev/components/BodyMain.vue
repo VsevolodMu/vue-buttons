@@ -21,6 +21,9 @@
         <p class="apartments__cards-text">From a room for a night to a loft for as long like, there's a RoamStay for
           every
           occasion.</p>
+        <router-link :to="{ name: routeNames.ADDAPARTMENTSCARD }">
+          <button class="apartments__button-add">Add Card</button>
+        </router-link>
         <div class="apartments__slider">
           <button class="apartments__slider-btn-size apartments__slider-btn--left">&lt;</button>
           <button class="apartments__slider-btn-size apartments__slider-btn--right">&gt;</button>
@@ -40,6 +43,7 @@
             :bedrooms="card.bedrooms"
             :bathrooms="card.bathrooms"
             :place="card.place"
+            :image="card.image"
         />
 
       </div>
@@ -84,6 +88,7 @@
 <script>
 import BodyPriceCard from "@/components/pages/blogEzhkovBaryshev/components/BodyPriceCard.vue";
 import {mapGetters} from "vuex";
+import {RouteNames} from "@/router/routes";
 
 export default {
   components: {BodyPriceCard},
@@ -99,7 +104,10 @@ export default {
     ]),
     getFilteredCard() {
       return this.getFilteredApartmentsCardStore(this.searchRequest)
-    }
+    },
+      routeNames () {
+        return RouteNames
+      }
   }
 }
 </script>
@@ -113,6 +121,19 @@ export default {
 
 .apartments {
   display: flex;
+  &__button-add {
+    margin-left: 100px;
+    margin-top: 30px;
+    color: white;
+    height: 40px;
+    background-color: rgba(217, 53, 75, 0.9);
+  }
+
+  &__slider{
+    width: 170px;
+    display: flex;
+    margin-left: 200px;
+  }
 }
 
 .search-wrapper-block {
@@ -208,10 +229,6 @@ export default {
   margin-top: -10px;
   font-size: 35px;
   color: white;
-}
-
-.apartments__slider-btn--left {
-  margin-left: 410px;
 }
 
 .apartments__slider-btn--right {

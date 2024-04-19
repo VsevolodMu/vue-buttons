@@ -3,7 +3,9 @@
     <div class="header__flex">
       <div class="header__logo">
         <img class="header__logo--img" src="../images/Logo.svg" alt="Логотип сайта">
-        <h2>RoamStay</h2>
+        <router-link :to="{ name: routeNames.HOMEPAGEEZHKOVBARYSHEV }">
+          <h2>RoamStay</h2>
+        </router-link>
       </div>
       <section class="header__right-buttons">
         <ul class="header-list">
@@ -34,7 +36,16 @@
 </template>
 
 <script>
-export default {name: 'HeaderNav'}
+import {RouteNames} from "@/router/routes";
+
+export default {
+  name: 'HeaderNav',
+  computed: {
+    routeNames () {
+      return RouteNames
+    }
+  }
+}
 </script>
 
 <style scoped lang="less">
