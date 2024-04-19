@@ -6,49 +6,49 @@
           v-model="id"
           type="text"
           placeholder="Place your id here"
-          class="add-page__inputs__title window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="name"
           type="text"
           placeholder="Place your name here"
-          class="add-page__inputs__price window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="price"
           type="text"
           placeholder="Place your price here"
-          class="add-page__inputs__rating window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="guests"
           type="text"
           placeholder="Place your guests here"
-          class="add-page__inputs__image window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="bedrooms"
           type="text"
           placeholder="Place your bedrooms here"
-          class="add-page__inputs__image window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="bathrooms"
           type="text"
           placeholder="Place your bathrooms here"
-          class="add-page__inputs__image window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="place"
           type="text"
           placeholder="Place your place here"
-          class="add-page__inputs__image window"
+          class="add-page__inputs__standard window"
       />
       <input
           v-model="image"
           type="text"
           placeholder="Place your url here"
-          class="add-page__inputs__title window"
+          class="add-page__inputs__image window"
       />
     </div>
     <button class="add-page__create-btn" @click="() => create()">
