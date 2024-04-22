@@ -7,7 +7,7 @@
         </h4>
         <div class="card__plate-paragraph">
           <p class="card__plate-paragraph-price">
-            ${{ price }}
+            ${{ cardObject.price }}
           </p>
           <p class="card__plate-paragraph-value">
             usd/Night
@@ -16,13 +16,13 @@
       </div>
       <div class="card__info">
         <div class="card__info-name">
-          {{ name }}
+          {{ cardObject.name }}
         </div>
         <div class="card__info-location">
-          {{ place }}
+          {{ cardObject.place }}
         </div>
         <div class="card__info-rooms">
-          {{ guests + ' Guests | ' + bedrooms + ' Bedrooms | ' + bathrooms + ' Bathrooms ' }}
+          {{ cardObject.guests + ' Guests | ' + cardObject.bedrooms + ' Bedrooms | ' + cardObject.bathrooms + ' Bathrooms ' }}
         </div>
       </div>
     </div>
@@ -40,41 +40,9 @@ export default {
       type: Number,
       required: 'true'
     },
-    cardArray: {
-      type: Array,
+    cardObject: {
+      type: Object,
       required: 'true'
-    },
-    id: {
-      type: Number,
-      require: 'true'
-    },
-    name: {
-      type: String,
-      require: 'true'
-    },
-    price: {
-      type: Number,
-      require: 'true'
-    },
-    guests: {
-      type: Number,
-      require: 'true'
-    },
-    bedrooms: {
-      type: Number,
-      require: 'true'
-    },
-    bathrooms: {
-      type: Number,
-      require: 'true'
-    },
-    place: {
-      type: String,
-      require: 'true'
-    },
-    image: {
-      type: String,
-      require: 'true',
     }
   },
   computed: {
@@ -82,7 +50,7 @@ export default {
       return RouteNames
     },
     cardImage() {
-      return {backgroundImage: 'url(' + this.image + ')'}
+      return {backgroundImage: 'url(' + this.cardObject.image + ')'}
     }
   }
 }

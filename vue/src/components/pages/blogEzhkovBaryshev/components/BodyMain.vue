@@ -35,15 +35,7 @@
             v-for="(card, index) in getFilteredCard"
             :key="index"
             :currentIndex="index"
-            :cardArray="getApartmentsCardStore"
-            :id="card.id"
-            :name="card.name"
-            :price="card.price"
-            :guests="card.guests"
-            :bedrooms="card.bedrooms"
-            :bathrooms="card.bathrooms"
-            :place="card.place"
-            :image="card.image"
+            :cardObject="card"
         />
 
       </div>
