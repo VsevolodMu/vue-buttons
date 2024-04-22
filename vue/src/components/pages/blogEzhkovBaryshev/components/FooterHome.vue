@@ -1,60 +1,60 @@
 <template>
   <div class="footer-wrapper">
     <div class = "footer">
-      <img class="footer-image" src="../images/Logo.svg" alt="Логотип сайта">
-      <h2 class="footer-text">RoamStay</h2>
-      <section class="footer__middle-buttons">
-        <ul class="footer-list">
-          <li class="footer-list__item footer-list__first">
-            <a href="#Check_in" class="footer-list__link">About us</a>
+      <img class="logo-image" src="../images/Logo.svg" alt="Логотип сайта">
+      <h2 class="association-name">RoamStay</h2>
+      <section class="middle-buttons">
+        <ul class="right-list">
+          <li class="right-list__item list__first">
+            <a href="#Check_in" class="right__link">About us</a>
           </li>
-          <li class="footer-list__item footer-list__second">
-            <a href="#Check_in" class="footer-list__link">Business and groups</a>
+          <li class="right-list__item list__second">
+            <a href="#Check_in" class="right__link">Business and groups</a>
           </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Support</a>
+          <li class="right-list__item list__third">
+            <a href="#Log In" class="right__link">Support</a>
           </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Responsibility</a>
+          <li class="right-list__item list__third">
+            <a href="#Log In" class="right__link">Responsibility</a>
           </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Blog</a>
+          <li class="right-list__item list__third">
+            <a href="#Log In" class="right__link">Blog</a>
           </li>
         </ul>
       </section>
-      <section class="footer__right-buttons">
-        <ul class="footer-list">
-          <li class="footer-list__item footer-list__first">
-            <a href="#Check_in" class="footer-list__link">Social</a>
+      <section class="right-buttons">
+        <ul class="right-list">
+          <li class="right-list__item list__first">
+            <a href="#Check_in" class="right__link">Social</a>
           </li>
-          <li class="footer-list__item footer-list__second">
-            <img class="footer-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
+          <li class="right-list__item list__second">
+            <img class="logo-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
                  alt="Логотип сайта">
-            <img class="footer-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
-            <img class="footer-image" src="../images/twitter-icon.png" alt="Логотип сайта">
+            <img class="logo-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
+            <img class="logo-image" src="../images/twitter-icon.png" alt="Логотип сайта">
           </li>
-          <li class="footer-list__item footer-list__third">
-            <a href="#Log In" class="footer-list__link">Language</a>
+          <li class="right-list__item list__third">
+            <a href="#Log In" class="right__link">Language</a>
           </li>
-          <li class="footer-list__item header-list__first">
-            <button class="footer-list__first-button"/>
+          <li class="right-list__item list__first">
+            <button class="special__first-button"/>
           </li>
         </ul>
       </section>
     </div>
-      <section class="footer__down-buttons">
-        <ul class="footer-list-down" style="display: flex; flex-direction: row;">
+      <section class="down-buttons">
+        <ul class="right-list-down" style="display: flex; flex-direction: row;">
           <li>
-            <h3 class="footer-logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
+            <h3 class="logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
           </li>
           <li>
-            <h3 class="footer-logo__text-down-second">Terms of Service</h3>
+            <h3 class="logo__text-down-second">Terms of Service</h3>
           </li>
           <li>
-            <h3 class="footer-logo__text-down-third">Privacy Policy</h3>
+            <h3 class="logo__text-down-third">Privacy Policy</h3>
           </li>
           <li>
-            <h3 class="footer-logo__text-down-fourth">+1 665-555-5454</h3>
+            <h3 class="logo__text-down-fourth">+1 665-555-5454</h3>
           </li>
         </ul>
       </section>
@@ -75,57 +75,57 @@
 }
 
 
-.footer-image {
+.logo-image {
   margin-top: 30px;
   height: 40px;
   padding-right: 25px;
 }
 
-.footer-text {
+.association-name {
   margin-top: 30px;
   color: white;
   font-size: 33px;
 }
 
 
-.footer-logo__text-down-first {
+.logo__text-down-first {
   margin-top: 1px;
   color: white;
   font-size: 17px;
 }
 
-.footer-logo__text-down-second {
+.logo__text-down-second {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 339px;
 }
 
-.footer-logo__text-down-third {
+.logo__text-down-third {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 68px;
 }
 
-.footer-logo__text-down-fourth {
+.logo__text-down-fourth {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 140px;
 }
 
-.footer__middle-buttons {
+.middle-buttons {
   background: transparent;
   margin-left: 400px;
 }
 
-.footer__right-buttons {
+.right-buttons {
   background: transparent;
   margin-left: 240px;
 }
 
-.footer-list {
+.right-list {
   list-style-type: none;
 
   &-down {
@@ -133,23 +133,23 @@
   }
 }
 
-.footer-list__item:nth-child(n+1) {
+.right-list__item:nth-child(n+1) {
   margin-top: 35px;
 }
 
-.footer-list__link {
+.right__link {
   color: white;
   font-size: 22px;
 }
 
-.footer__down-buttons {
+.down-buttons {
   display: flex;
   background: transparent;
   margin-top: -10px;
   margin-left: 115px;
 }
 
-.footer-list__first-button {
+.special__first-button {
   height: 45px;
   width: 175px;
   border-radius: 20px;
