@@ -7,14 +7,13 @@
       <br>
       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
     <Search/>
-    <div class="buttonPagination">
+    <div class="buttonPagination__component">
       <div
-          @click="() => move(index)"
           v-for="(card, index) in getImages"
           :key="index"
+          @click="() => move(index)"
       >
         <ButtonPagination
-            class="buttonPagination__component"
             :is-active="index === currentIndex"
         />
       </div>
@@ -60,12 +59,12 @@ export default {
   height: 1025px;
 }
 
-.buttonPagination {
+.buttonPagination__component {
   display: flex;
   justify-content: center;
   margin-top: 200px;
 
-  &__component:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 25px;
   }
 }
