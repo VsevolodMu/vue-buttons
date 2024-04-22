@@ -1,91 +1,79 @@
 <template>
-  <div class="footer">
-    <div class="footer-flex">
-      <div class="footer-logo">
-        <img class="footer-image" src="../images/Logo.svg" alt="Логотип сайта">
-        <h2 class="footer-text">RoamStay</h2>
-        <section class="footer__middle-buttons">
-          <ul class="footer-list">
-            <li class="footer-list__item footer-list__first">
-              <a href="#Check_in" class="footer-list__link">About us</a>
-            </li>
-            <li class="footer-list__item footer-list__second">
-              <a href="#Check_in" class="footer-list__link">Business and groups</a>
-            </li>
-            <li class="footer-list__item footer-list__third">
-              <a href="#Log In" class="footer-list__link">Support</a>
-            </li>
-            <li class="footer-list__item footer-list__third">
-              <a href="#Log In" class="footer-list__link">Responsibility</a>
-            </li>
-            <li class="footer-list__item footer-list__third">
-              <a href="#Log In" class="footer-list__link">Blog</a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer__right-buttons">
-          <ul class="footer-list">
-            <li class="footer-list__item footer-list__first">
-              <a href="#Check_in" class="footer-list__link">Social</a>
-            </li>
-            <li class="footer-list__item footer-list__second">
-              <img class="footer-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
-                   alt="Логотип сайта">
-              <img class="footer-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
-              <img class="footer-image" src="../images/twitter-icon.png" alt="Логотип сайта">
-            </li>
-            <li class="footer-list__item footer-list__third">
-              <a href="#Log In" class="footer-list__link">Language</a>
-            </li>
-            <li class="footer-list__item header-list__first">
-              <button class="footer-list__first-button"/>
-            </li>
-          </ul>
-        </section>
-      </div>
+  <div class="footer-wrapper">
+    <div class = "footer">
+      <img class="footer-image" src="../images/Logo.svg" alt="Логотип сайта">
+      <h2 class="footer-text">RoamStay</h2>
+      <section class="footer__middle-buttons">
+        <ul class="footer-list">
+          <li class="footer-list__item footer-list__first">
+            <a href="#Check_in" class="footer-list__link">About us</a>
+          </li>
+          <li class="footer-list__item footer-list__second">
+            <a href="#Check_in" class="footer-list__link">Business and groups</a>
+          </li>
+          <li class="footer-list__item footer-list__third">
+            <a href="#Log In" class="footer-list__link">Support</a>
+          </li>
+          <li class="footer-list__item footer-list__third">
+            <a href="#Log In" class="footer-list__link">Responsibility</a>
+          </li>
+          <li class="footer-list__item footer-list__third">
+            <a href="#Log In" class="footer-list__link">Blog</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__right-buttons">
+        <ul class="footer-list">
+          <li class="footer-list__item footer-list__first">
+            <a href="#Check_in" class="footer-list__link">Social</a>
+          </li>
+          <li class="footer-list__item footer-list__second">
+            <img class="footer-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
+                 alt="Логотип сайта">
+            <img class="footer-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
+            <img class="footer-image" src="../images/twitter-icon.png" alt="Логотип сайта">
+          </li>
+          <li class="footer-list__item footer-list__third">
+            <a href="#Log In" class="footer-list__link">Language</a>
+          </li>
+          <li class="footer-list__item header-list__first">
+            <button class="footer-list__first-button"/>
+          </li>
+        </ul>
+      </section>
     </div>
-    <section class="footer__down-buttons">
-      <ul class="footer-list-down" style="display: flex; flex-direction: row;">
-        <li>
-          <h3 class="footer-logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
-        </li>
-        <li>
-          <h3 class="footer-logo__text-down-second">Terms of Service</h3>
-        </li>
-        <li>
-          <h3 class="footer-logo__text-down-third">Privacy Policy</h3>
-        </li>
-        <li>
-          <h3 class="footer-logo__text-down-fourth">+1 665-555-5454</h3>
-        </li>
-      </ul>
-    </section>
+      <section class="footer__down-buttons">
+        <ul class="footer-list-down" style="display: flex; flex-direction: row;">
+          <li>
+            <h3 class="footer-logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
+          </li>
+          <li>
+            <h3 class="footer-logo__text-down-second">Terms of Service</h3>
+          </li>
+          <li>
+            <h3 class="footer-logo__text-down-third">Privacy Policy</h3>
+          </li>
+          <li>
+            <h3 class="footer-logo__text-down-fourth">+1 665-555-5454</h3>
+          </li>
+        </ul>
+      </section>
   </div>
 </template>
 <style>
-.footer {
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  height: 500px;
-  padding: 20px 30px;
-  margin-top: 60px;
-  background-color: black;
-  color: white;
-  font-family: "Calibri", sans-serif;
-  font-size: 12px;
-  letter-spacing: 1px;
 
-  &-flex {
-    display: flex;
-  }
+.footer-wrapper {
+  background-color: black;
+  padding: 20px 30px;
 }
 
-.footer-logo {
-  display: flex;
+.footer {
   margin-left: 165px;
   margin-bottom: 90px;
+  display: flex;
+
 }
+
 
 .footer-image {
   margin-top: 30px;
@@ -98,6 +86,7 @@
   color: white;
   font-size: 33px;
 }
+
 
 .footer-logo__text-down-first {
   margin-top: 1px;
