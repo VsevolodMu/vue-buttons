@@ -1,5 +1,5 @@
 import modals from './modals'
-import BackgroundCardStore from "@/store/blogEzhkovBaryshev/BackgroundCardStore";
+import FlipperCardStore from "@/store/blogEzhkovBaryshev/FlipperCardStore";
 import ApartmentsCardStore from "@/store/blogEzhkovBaryshev/ApartmentsCardStore";
 
 export default {
@@ -9,7 +9,7 @@ export default {
   mutations: {},
   modules: {
     modals,
-    BackgroundCardStore,
+    FlipperCardStore,
     ApartmentsCardStore
   }
 }

@@ -31,7 +31,9 @@ import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNa
 
 export default {
   name: "TourPage",
-  components: {HeaderNav},
+  components: {
+    HeaderNav
+  },
   computed: {
     ...mapGetters('ApartmentsCardStore', [
       'getApartmentsCardStore'

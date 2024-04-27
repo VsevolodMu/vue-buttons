@@ -1,6 +1,6 @@
 
 const state = {
-  BackgroundCardStore: [
+  FlipperCardStore: [
     {
       image: "https://s0.rbk.ru/v6_top_pics/resized/1200xH/media/img/4/53/756069837119534.jpg"
     },
@@ -20,7 +20,7 @@ const state = {
 }
 
 const getters = {
-  getImages: (state) => state.BackgroundCardStore
+  getImages: (state) => state.FlipperCardStore
 }
 
 

@@ -39,7 +39,9 @@
 
 
 <script>
-export default {name: 'HomeSearch'}
+export default {
+  name: 'HomeSearch'
+}
 
 </script>
 

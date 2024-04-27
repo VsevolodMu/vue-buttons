@@ -29,14 +29,18 @@ import {mapGetters} from "vuex";
 
 export default {
   name: "HeaderHome",
-  components: {HeaderNav, Search, ButtonPagination},
+  components: {
+    HeaderNav,
+    Search,
+    ButtonPagination
+  },
   data() {
     return {
       currentIndex: 0
     }
   },
   computed: {
-    ...mapGetters('BackgroundCardStore', [
+    ...mapGetters('FlipperCardStore', [
       'getImages'
     ]),
     cardImage() {

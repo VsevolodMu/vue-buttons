@@ -21,9 +21,9 @@
         <p class="apartments__cards-text">From a room for a night to a loft for as long like, there's a RoamStay for
           every
           occasion.</p>
-        <router-link :to="{ name: routeNames.ADDAPARTMENTSCARD }">
+        <RouterLink :to="{ name: routeNames.ADDAPARTMENTSCARD }">
           <button class="apartments__button-add">Add Card</button>
-        </router-link>
+        </RouterLink>
         <div class="apartments__slider">
           <button class="apartments__slider-btn-size apartments__slider-btn--left">&lt;</button>
           <button class="apartments__slider-btn-size apartments__slider-btn--right">&gt;</button>
@@ -83,7 +83,10 @@ import {mapGetters} from "vuex";
 import {RouteNames} from "@/router/routes";
 
 export default {
-  components: {BodyPriceCard},
+  name: 'BodyMainPriceCard',
+  components: {
+    BodyPriceCard
+  },
   data() {
     return {
       searchRequest: ''

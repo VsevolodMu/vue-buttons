@@ -45,16 +45,16 @@
       <section class="down-buttons">
         <ul class="right-list-down" style="display: flex; flex-direction: row;">
           <li>
-            <h3 class="logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
+            <h3 class="logo__text-down">⊞ 2021 RoamStay All night reserved</h3>
           </li>
           <li>
-            <h3 class="logo__text-down-second">Terms of Service</h3>
+            <h3 class="terms-service">Terms of Service</h3>
           </li>
           <li>
-            <h3 class="logo__text-down-third">Privacy Policy</h3>
+            <h3 class="privacy-policy">Privacy Policy</h3>
           </li>
           <li>
-            <h3 class="logo__text-down-fourth">+1 665-555-5454</h3>
+            <h3 class="number">+1 665-555-5454</h3>
           </li>
         </ul>
       </section>
@@ -74,7 +74,6 @@
 
 }
 
-
 .logo-image {
   margin-top: 30px;
   height: 40px;
@@ -87,28 +86,27 @@
   font-size: 33px;
 }
 
-
-.logo__text-down-first {
+.logo__text-down {
   margin-top: 1px;
   color: white;
   font-size: 17px;
 }
 
-.logo__text-down-second {
+.terms-service {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 339px;
 }
 
-.logo__text-down-third {
+.privacy-policy {
   margin-top: 1px;
   color: white;
   font-size: 17px;
   margin-left: 68px;
 }
 
-.logo__text-down-fourth {
+.number {
   margin-top: 1px;
   color: white;
   font-size: 17px;
