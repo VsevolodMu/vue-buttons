@@ -87,7 +87,6 @@ export default {
 
       &:hover {
         color: #D9354B;
-
       }
     }
   }

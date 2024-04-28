@@ -5,38 +5,38 @@
       <h2 class="association-name">RoamStay</h2>
       <section class="middle-buttons">
         <ul class="right-list">
-          <li class="right-list__item list__first">
+          <li class="right-footer__item list__first">
             <a href="#Check_in" class="right__link">About us</a>
           </li>
-          <li class="right-list__item list__second">
+          <li class="right-footer__item list__second">
             <a href="#Check_in" class="right__link">Business and groups</a>
           </li>
-          <li class="right-list__item list__third">
+          <li class="right-footer__item list__third">
             <a href="#Log In" class="right__link">Support</a>
           </li>
-          <li class="right-list__item list__third">
+          <li class="right-footer__item list__third">
             <a href="#Log In" class="right__link">Responsibility</a>
           </li>
-          <li class="right-list__item list__third">
+          <li class="right-footer__item list__third">
             <a href="#Log In" class="right__link">Blog</a>
           </li>
         </ul>
       </section>
       <section class="right-buttons">
         <ul class="right-list">
-          <li class="right-list__item list__first">
+          <li class="right-footer__item list__first">
             <a href="#Check_in" class="right__link">Social</a>
           </li>
-          <li class="right-list__item list__second">
+          <li class="right-footer__item list__second">
             <img class="logo-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
                  alt="Логотип сайта">
             <img class="logo-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
             <img class="logo-image" src="../images/twitter-icon.png" alt="Логотип сайта">
           </li>
-          <li class="right-list__item list__third">
+          <li class="right-footer__item list__third">
             <a href="#Log In" class="right__link">Language</a>
           </li>
-          <li class="right-list__item list__first">
+          <li class="right-footer__item list__first">
             <button class="special__first-button"/>
           </li>
         </ul>
@@ -71,7 +71,6 @@
   margin-left: 165px;
   margin-bottom: 90px;
   display: flex;
-
 }
 
 .logo-image {
@@ -131,7 +130,7 @@
   }
 }
 
-.right-list__item:nth-child(n+1) {
+.right-footer__item:nth-child(n+1) {
   margin-top: 35px;
 }
 
@@ -179,5 +178,3 @@
   }
 }
 </style>
-<script>
-</script>

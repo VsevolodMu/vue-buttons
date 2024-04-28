@@ -30,7 +30,6 @@
 </template>
 
 <script>
-
 import {RouteNames} from "@/router/routes";
 
 export default {
@@ -54,7 +53,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped lang="less">
@@ -116,7 +114,5 @@ export default {
   &-rooms {
     margin-top: 15px;
   }
-
 }
-
 </style>
