@@ -49,26 +49,22 @@
       </div>
       <section class="service-information">
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom.png"
-               alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">Kitchen with all<br> equipment
           </p>
         </div>
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-2.png"
-               alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-2.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">One-tap <br> WiFi access
           </p>
         </div>
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-3.png"
-               alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-3.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">Round-the-clock<br> support
           </p>
         </div>
         <div class="service-information__card">
-          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-4.png"
-               alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-4.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">Request late<br> checkout
           </p>
         </div>
