@@ -1,185 +1,191 @@
 <template>
   <div class="footer-wrapper">
-    <div class = "footer">
-      <img class="logo-image" src="../images/Logo.svg" alt="Логотип сайта">
-      <h2 class="association-name">RoamStay</h2>
-      <section class="middle-buttons">
-        <ul class="right-list">
-          <li class="right-list__item list__first">
-            <a href="#Check_in" class="right__link">About us</a>
-          </li>
-          <li class="right-list__item list__second">
-            <a href="#Check_in" class="right__link">Business and groups</a>
-          </li>
-          <li class="right-list__item list__third">
-            <a href="#Log In" class="right__link">Support</a>
-          </li>
-          <li class="right-list__item list__third">
-            <a href="#Log In" class="right__link">Responsibility</a>
-          </li>
-          <li class="right-list__item list__third">
-            <a href="#Log In" class="right__link">Blog</a>
-          </li>
+    <div class="footer">
+      <div class="footer-logo-wrapper">
+        <img class="footer__logo-image"
+             src="../images/Logo.svg"
+             alt="Логотип сайта">
+        <h2 class="footer__logo-text">RoamStay</h2>
+      </div>
+      <section>
+        <ul class="footer__panel-list">
+          <li><a class="footer__panel-list-link" href="#">About us</a></li>
+          <li><a class="footer__panel-list-link" href="#">Business and groups</a></li>
+          <li><a class="footer__panel-list-link" href="#">Support</a></li>
+          <li><a class="footer__panel-list-link" href="#">Responsibility</a></li>
+          <li><a class="footer__panel-list-link" href="#">Blog</a></li>
         </ul>
       </section>
-      <section class="right-buttons">
-        <ul class="right-list">
-          <li class="right-list__item list__first">
-            <a href="#Check_in" class="right__link">Social</a>
+      <section>
+        <ul class="footer__social-panel-list social-panel-list">
+          <li>
+            <a href="#">Social</a>
           </li>
-          <li class="right-list__item list__second">
-            <img class="logo-image" src="../images/Facebook-Logo-Transparent-Background-PNG.png"
-                 alt="Логотип сайта">
-            <img class="logo-image" src="../images/instagram-icon.jpg" alt="Логотип сайта">
-            <img class="logo-image" src="../images/twitter-icon.png" alt="Логотип сайта">
+          <li>
+            <img
+                class="footer__social-panel-list-image"
+                src="../images/Facebook-Logo-Transparent-Background-PNG.png"
+                alt="Логотип Фейсбука">
+            <img
+                class="footer__social-panel-list-image"
+                src="../images/instagram-icon.jpg"
+                alt="Логотип Инстаграмма">
+            <img
+                class="footer__social-panel-list-image"
+                src="../images/twitter-icon.png"
+                alt="Логотип Твиттера">
           </li>
-          <li class="right-list__item list__third">
-            <a href="#Log In" class="right__link">Language</a>
+          <li>
+            <a href="#">Language</a>
           </li>
-          <li class="right-list__item list__first">
-            <button class="special__first-button"/>
+          <li>
+            <button class="footer__social-panel-button"/>
           </li>
         </ul>
       </section>
     </div>
-      <section class="down-buttons">
-        <ul class="right-list-down" style="display: flex; flex-direction: row;">
-          <li>
-            <h3 class="logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
-          </li>
-          <li>
-            <h3 class="logo__text-down-second">Terms of Service</h3>
-          </li>
-          <li>
-            <h3 class="logo__text-down-third">Privacy Policy</h3>
-          </li>
-          <li>
-            <h3 class="logo__text-down-fourth">+1 665-555-5454</h3>
-          </li>
-        </ul>
-      </section>
+    <section>
+      <ul class="footer__information">
+        <li>
+          <h3 class="logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
+        </li>
+        <li>
+          <h3 class="logo__text-down-second">Terms of Service</h3>
+        </li>
+        <li>
+          <h3 class="logo__text-down-third">Privacy Policy</h3>
+        </li>
+        <li>
+          <h3 class="logo__text-down-fourth">+1 665-555-5454</h3>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
-<style>
+<style scoped lang="less">
+
+section {
+  background-color: transparent;
+}
+
+ul li a {
+  color: white;
+  font-size: 25px;
+}
+
+h2, h3 {
+  color: white;
+}
 
 .footer-wrapper {
   background-color: black;
-  padding: 20px 30px;
 }
 
 .footer {
-  margin-left: 165px;
-  margin-bottom: 90px;
   display: flex;
 
-}
-
-
-.logo-image {
-  margin-top: 30px;
-  height: 40px;
-  padding-right: 25px;
-}
-
-.association-name {
-  margin-top: 30px;
-  color: white;
-  font-size: 33px;
-}
-
-
-.logo__text-down-first {
-  margin-top: 1px;
-  color: white;
-  font-size: 17px;
-}
-
-.logo__text-down-second {
-  margin-top: 1px;
-  color: white;
-  font-size: 17px;
-  margin-left: 339px;
-}
-
-.logo__text-down-third {
-  margin-top: 1px;
-  color: white;
-  font-size: 17px;
-  margin-left: 68px;
-}
-
-.logo__text-down-fourth {
-  margin-top: 1px;
-  color: white;
-  font-size: 17px;
-  margin-left: 140px;
-}
-
-.middle-buttons {
-  background: transparent;
-  margin-left: 400px;
-}
-
-.right-buttons {
-  background: transparent;
-  margin-left: 240px;
-}
-
-.right-list {
-  list-style-type: none;
-
-  &-down {
+  &-logo-wrapper {
     display: flex;
+    margin-left: 190px;
+    margin-top: 70px;
+  }
+
+  &__logo-image {
+    height: 40px;
+  }
+
+  &__logo-text {
+    font-size: 35px;
+    padding-left: 35px;
+  }
+
+  &__panel-list {
+    list-style-type: none;
+    margin-left: 400px;
+    margin-top: 80px;
+
+    & li {
+      margin-top: 30px;
+    }
+  }
+
+  &__social {
+
+    &-panel {
+      &-list {
+        list-style-type: none;
+        margin-left: 230px;
+        margin-top: 80px;
+
+        &-image {
+          height: 40px;
+          object-fit: cover;
+          background-color: transparent;
+          border-radius: 30px;
+          padding: 10px;
+          border: 1px solid white;
+          margin-right: 10px;
+        }
+
+        &-image:nth-of-type(2) {
+          width: 40px;
+        }
+
+        & li {
+          margin-top: 30px;
+        }
+      }
+
+      &-button {
+        height: 45px;
+        width: 175px;
+        border-radius: 20px;
+        border-color: white;
+        position: relative;
+        border-style: solid;
+        margin-top: -5px;
+        background-color: transparent;
+        color: white;
+
+        &::before {
+          font-size: 18px;
+          content: 'English';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          right: 50px;
+          top: 12px;
+        }
+
+        &::after {
+          font-size: 20px;
+          content: 'ᐁ';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 60px;
+          top: 8px;
+        }
+      }
+    }
+  }
+
+  &__information {
+    display: flex;
+    margin-left: 40px;
+
+    & li {
+      &:nth-of-type(n+1) {
+        margin-left: 100px;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 350px;
+      }
+    }
   }
 }
 
-.right-list__item:nth-child(n+1) {
-  margin-top: 35px;
-}
-
-.right__link {
-  color: white;
-  font-size: 22px;
-}
-
-.down-buttons {
-  display: flex;
-  background: transparent;
-  margin-top: -10px;
-  margin-left: 115px;
-}
-
-.special__first-button {
-  height: 45px;
-  width: 175px;
-  border-radius: 20px;
-  border-color: white;
-  position: relative;
-  border-style: solid;
-  margin-top: -5px;
-  background-color: transparent;
-  color: white;
-
-  &::before {
-    font-size: 18px;
-    content: 'English';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 50px;
-    top: 12px;
-  }
-
-  &::after {
-    font-size: 20px;
-    content: 'ᐁ';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 60px;
-    top: 8px;
-  }
-}
 </style>
 <script>
 </script>
