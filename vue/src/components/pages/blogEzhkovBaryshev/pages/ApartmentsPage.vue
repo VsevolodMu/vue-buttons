@@ -3,22 +3,22 @@
     <HeaderNav/>
     <div class="apartment__card" :style="cardImage">
       <h2 class="apartment__card-name">
-        {{ getApartmentsCardStore[$route.params.id]['name'] }}
+        {{ apartment.name }}
       </h2>
       <p class="apartment__card-size">
-        Price: {{ getApartmentsCardStore[$route.params.id]['price'] }} per night
+        Price: {{ apartment.price }} per night
       </p>
       <p class="apartment__card-size">
-        Quests: {{ getApartmentsCardStore[$route.params.id]['guests'] }}
+        Guests: {{ apartment.guests }}
       </p>
       <p class="apartment__card-size">
-        Bedrooms: {{ getApartmentsCardStore[$route.params.id]['bedrooms'] }}
+        Bedrooms: {{ apartment.bedrooms }}
       </p>
       <p class="apartment__card-size">
-        Bathrooms: {{ getApartmentsCardStore[$route.params.id]['bathrooms'] }}
+        Bathrooms: {{ apartment.bathrooms }}
       </p>
       <p class="apartment__card-size">
-        Place: {{ getApartmentsCardStore[$route.params.id]['place'] }}
+        Place: {{ apartment.place }}
       </p>
       <button class="apartment__card-book">BOOK NOW</button>
     </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import {mapGetters} from "vuex";
+import { mapGetters } from "vuex";
 import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNav.vue";
 
 export default {
@@ -38,8 +38,12 @@ export default {
     ...mapGetters('ApartmentsCardStore', [
       'getApartmentsCardStore'
     ]),
+    apartment() {
+      const apartmentId = this.$route.params.id;
+      return this.getApartmentsCardStore[apartmentId];
+    },
     cardImage() {
-      return {backgroundImage: 'url(' + this.getApartmentsCardStore[this.$route.params.id]['image'] + ')'};
+      return { backgroundImage: 'url(' + this.apartment.image + ')' };
     }
   }
 }

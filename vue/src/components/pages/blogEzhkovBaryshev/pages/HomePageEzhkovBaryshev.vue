@@ -13,6 +13,7 @@ import FooterHome from "@/components/pages/blogEzhkovBaryshev/components/FooterH
 import BodyMain from "@/components/pages/blogEzhkovBaryshev/components/BodyMain.vue";
 
 export default {
+  name: "HomePage",
   components: {
     HeaderHome,
     FooterHome,
