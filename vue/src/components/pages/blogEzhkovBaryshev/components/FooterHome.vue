@@ -79,6 +79,8 @@ h2, h3 {
 
 .footer-wrapper {
   background-color: black;
+  margin-top: 200px;
+  padding-bottom: 30px;
 }
 
 .footer {
@@ -172,6 +174,7 @@ h2, h3 {
 
   &__information {
     display: flex;
+    margin-top: 60px;
     margin-left: 40px;
 
     & li {
