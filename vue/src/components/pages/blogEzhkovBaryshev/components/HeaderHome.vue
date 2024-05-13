@@ -7,7 +7,7 @@
       <br>
       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
     <Search/>
-    <div class="buttonPagination__component">
+    <div class="button-pagination__component">
       <div
           v-for="(card, index) in getImages"
           :key="index"
@@ -29,14 +29,18 @@ import {mapGetters} from "vuex";
 
 export default {
   name: "HeaderHome",
-  components: {HeaderNav, Search, ButtonPagination},
+  components: {
+    HeaderNav,
+    Search,
+    ButtonPagination
+  },
   data() {
     return {
       currentIndex: 0
     }
   },
   computed: {
-    ...mapGetters('BackgroundCardStore', [
+    ...mapGetters('FlipperCardStore', [
       'getImages'
     ]),
     cardImage() {
@@ -59,7 +63,7 @@ export default {
   height: 1025px;
 }
 
-.buttonPagination__component {
+.button-pagination__component {
   display: flex;
   justify-content: center;
   margin-top: 200px;
@@ -87,5 +91,4 @@ export default {
     font-family: SansSerif, serif;
   }
 }
-
 </style>

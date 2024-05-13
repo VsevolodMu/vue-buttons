@@ -6,7 +6,7 @@
 
         <div class="search-block">
           <form class="search-block__form">
-            <input type="text" name="text" class="search-block__text" placeholder="Поиск" v-model="searchRequest">
+            <input v-model="searchRequest" type="text" name="text" class="search-block__text" placeholder="Поиск">
             <input type="submit" name="submit" class="search-block__submit" value="">
           </form>
         </div>
@@ -21,9 +21,9 @@
         <p class="apartments__cards-text">From a room for a night to a loft for as long like, there's a RoamStay for
           every
           occasion.</p>
-        <router-link :to="{ name: routeNames.ADDAPARTMENTSCARD }">
+        <RouterLink :to="{ name: routeNames.ADDAPARTMENTSCARD }">
           <button class="apartments__button-add">Add Card</button>
-        </router-link>
+        </RouterLink>
         <div class="apartments__slider">
           <button class="apartments__slider-btn-size apartments__slider-btn--left">&lt;</button>
           <button class="apartments__slider-btn-size apartments__slider-btn--right">&gt;</button>
@@ -49,34 +49,22 @@
       </div>
       <section class="service-information">
         <div class="service-information__card">
-          <img
-              class="service-information__card-image"
-              src="../images/image-Photoroom.png-Photoroom.png"
-              alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">Kitchen with all<br> equipment
           </p>
         </div>
         <div class="service-information__card">
-          <img
-              class="service-information__card-image"
-              src="../images/image-Photoroom.png-Photoroom-2.png"
-              alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-2.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">One-tap <br> WiFi access
           </p>
         </div>
         <div class="service-information__card">
-          <img
-              class="service-information__card-image"
-              src="../images/image-Photoroom.png-Photoroom-3.png"
-              alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-3.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">Round-the-clock<br> support
           </p>
         </div>
         <div class="service-information__card">
-          <img
-              class="service-information__card-image"
-              src="../images/image-Photoroom.png-Photoroom-4.png"
-              alt="Логотип сайта">
+          <img class="service-information__card-image" src="../images/image-Photoroom.png-Photoroom-4.png" alt="Логотип сайта">
           <p class="service-information__card-paragraf">Request late<br> checkout
           </p>
         </div>
@@ -91,7 +79,10 @@ import {mapGetters} from "vuex";
 import {RouteNames} from "@/router/routes";
 
 export default {
-  components: {BodyPriceCard},
+  name: 'BodyMainPriceCard',
+  components: {
+    BodyPriceCard
+  },
   data() {
     return {
       searchRequest: ''
@@ -204,7 +195,6 @@ export default {
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
     }
-
   }
 }
 
@@ -214,7 +204,6 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 
 .text {
   display: flex;
@@ -259,7 +248,6 @@ export default {
 
     &-paragraf {
       text-align: center;
-
     }
 
     &:nth-child(1) {
@@ -271,7 +259,6 @@ export default {
     }
 
     &-image {
-      text-align-all: center;
       margin-left: 140px;
       margin-top: 90px;
     }

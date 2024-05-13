@@ -63,7 +63,9 @@ import {mapActions} from "vuex";
 
 export default {
   name: 'AddTourPage',
-  components: {HeaderNav},
+  components: {
+    HeaderNav
+  },
   data() {
     return {
       id: '',

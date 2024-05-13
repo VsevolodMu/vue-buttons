@@ -50,7 +50,6 @@ export default {
 
 <style scoped lang="less">
 
-
 .header {
 
   &__line {
