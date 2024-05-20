@@ -9,16 +9,16 @@
       </div>
       <section>
         <ul class="footer__panel-list">
-          <li><a class="footer__panel-list-link" href="#">About us</a></li>
-          <li><a class="footer__panel-list-link" href="#">Business and groups</a></li>
-          <li><a class="footer__panel-list-link" href="#">Support</a></li>
-          <li><a class="footer__panel-list-link" href="#">Responsibility</a></li>
-          <li><a class="footer__panel-list-link" href="#">Blog</a></li>
+          <li class="footer__panel-list-child"><a class="footer__panel-list-link" href="#">About us</a></li>
+          <li class="footer__panel-list-child"><a class="footer__panel-list-link" href="#">Business and groups</a></li>
+          <li class="footer__panel-list-child"><a class="footer__panel-list-link" href="#">Support</a></li>
+          <li class="footer__panel-list-child"><a class="footer__panel-list-link" href="#">Responsibility</a></li>
+          <li class="footer__panel-list-child"><a class="footer__panel-list-link" href="#">Blog</a></li>
         </ul>
       </section>
       <section>
         <ul class="footer__social-panel-list social-panel-list">
-          <li>
+          <li  class="footer__social-panel-list-child">
             <a href="#">Social</a>
           </li>
           <li>
@@ -45,17 +45,17 @@
       </section>
     </div>
     <section>
-      <ul class="footer__information">
-        <li>
+      <ul class="footer__information-list">
+        <li class="footer__information-list-child">
           <h3 class="logo__text-down-first">⊞ 2021 RoamStay All night reserved</h3>
         </li>
-        <li>
+        <li class="footer__information-list-child">
           <h3 class="logo__text-down-second">Terms of Service</h3>
         </li>
-        <li>
+        <li class="footer__information-list-child">
           <h3 class="logo__text-down-third">Privacy Policy</h3>
         </li>
-        <li>
+        <li class="footer__information-list-child">
           <h3 class="logo__text-down-fourth">+1 665-555-5454</h3>
         </li>
       </ul>
@@ -106,7 +106,7 @@ h2, h3 {
     margin-left: 400px;
     margin-top: 80px;
 
-    & li {
+    &-child {
       margin-top: 30px;
     }
   }
@@ -133,7 +133,7 @@ h2, h3 {
           width: 40px;
         }
 
-        & li {
+        &-child {
           margin-top: 30px;
         }
       }
@@ -172,12 +172,12 @@ h2, h3 {
     }
   }
 
-  &__information {
+  &__information-list {
     display: flex;
     margin-top: 60px;
     margin-left: 40px;
 
-    & li {
+    &-child {
       &:nth-of-type(n+1) {
         margin-left: 100px;
       }

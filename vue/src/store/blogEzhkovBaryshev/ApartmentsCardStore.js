@@ -78,7 +78,7 @@ const state = {
       bedrooms: 1,
       bathrooms: 1,
       place: "Italy Rukshwell 7 d",
-      image: "https://giak.ru/wp-content/uploads/2020/03/72d723c7749a098b2dc44323a43d8113.jpg"
+      image: "https://34travel.me/media/posts/58a2cc7492d13-hotels.jpg"
     },
     {
       id: 9,
