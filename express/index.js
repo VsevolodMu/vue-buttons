@@ -7,86 +7,114 @@ const http = require('http');
 const server = http.createServer(app);
 app.use(express.json());
 
-const firstTypeNewsList = [
-  {
-    id: 0,
-    data: '30 march 2024',
-    title: 'Feel the beauty of Africa',
-    image: 'https://www.apnphotographyschool.com/wp-content/uploads/2018/03/landscape-photography-tips.jpg',
-    text: 'Get in touch with all the nature, life, meaning of africa only by reading articles, watching fotos and living the life you can see on "TRAVELER"'
-  },
+const apartmentsCardStorage = [
   {
     id: 1,
-    data: '31 march 2024',
-    title: 'A Journey into the Continent',
-    image: 'https://avatars.dzeninfra.ru/get-zen_doc/3540570/pub_5f6f05a3df292d110948487f_5f6f094c63b25d04cd56fc53/scale_1200',
-    text: 'Embark on an adventure through the diverse landscapes and rich cultures of Africa. From the majestic savannas of the Serengeti to the bustling markets of Marrakech, Africa captivates with its stunning beauty and compelling history.'
+    name: "Trejo Beautiful Escape",
+    price: 175,
+    guests: 4,
+    bedrooms: 2,
+    bathrooms: 2,
+    place: "Mexico Greenway 21 k",
+    image: "https://skyview.ru/upload/resize_cache/iblock/f49/1148_700_1/pve10j7i8j7pd3lgrip8ogubdyb9m9dr.webp"
   },
   {
     id: 2,
-    data: '31 march 2024',
-    title: 'The Diverse Landscapes of Africa',
-    image: 'https://druzhniy-center.ru/wp-content/uploads/4/c/f/4cfd2df1f02ed60357cd2226a9db7358.jpeg',
-    text: 'Africa, the second largest continent on Earth, is a land of incredible diversity. From the vast Sahara Desert in the north to the lush rainforests of Central Africa and the stunning savannas of East Africa.'
-  },
-];
-
-const secondTypeNewsList = [
-  {
-    id: 0,
-    date: '26 MARCH 2024',
-    title: 'Long time journey',
-    image: 'https://img.freepik.com/premium-photo/a-desert-scene-with-camels-and-a-sunset_900396-13267.jpg',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut I dolore manga allquam erat vol.Ut wisi enim ad minim veniam nostrud exerct tation ullamcor.'
-  },
-  {
-    id: 1,
-    date: '26 MARCH 2024',
-    title: 'Above nothing',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vqdFUFR0K6fud0haT9TANU4ctBZb2obxrg&s',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut'
-  },
-  {
-    id: 2,
-    date: '26 MARCH 2024',
-    title: 'Life in a desert',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwa2zQxeJbzjhpJI_kWR85ZigyrCZBie7S-zFC98NKRlcBhS50ive01suE6SFdB0OJvko&usqp=CAU',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut I dolore manga allquam erat vol.Ut wisi enim ad minim veniam nostrud exerct tation'
+    name: "Super Sea",
+    price: 225,
+    guests: 3,
+    bedrooms: 2,
+    bathrooms: 1,
+    place: "Atlanta Sorich 11 a",
+    image: "https://s7.stc.all.kpcdn.net/family/wp-content/uploads/2022/11/top-chto-takoe-apartamenty-960x540-1-960x540.jpg"
   },
   {
     id: 3,
-    date: '26 MARCH 2024',
-    title: 'Desert of the livings',
-    image: 'https://avatars.mds.yandex.net/i?id=a05f0c69e04535ac11447460d1f453747cab0379-10096959-images-thumbs&n=13',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut I dolore manga '
+    name: "Roof Hotel",
+    price: 150,
+    guests: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    place: "Italy Rukshwell 7 d",
+    image: "https://novostroycity.ru/uploads/journal_entries/1602508947.jpg"
   },
   {
     id: 4,
-    date: '26 MARCH 2024',
-    title: 'Long long road',
-    image: 'https://avatars.mds.yandex.net/i?id=5675895fb1f618ad3f59333ce4d0ab48af9172e4-12434137-images-thumbs&n=13',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut I dolore manga allquam erat vol.Ut wisi enim ad minim veniam nostrud exerct tation ullamcor.'
+    name: "Home Hotel",
+    price: 225,
+    guests: 3,
+    bedrooms: 2,
+    bathrooms: 1,
+    place: "Atlanta Sorich 11 a",
+    image: "https://www.palladaran.ru/uploads/images/apartamenty-v-gostinice.jpg"
   },
   {
     id: 5,
-    date: '26 MARCH 2024',
-    title: "Africa's forest",
-    image: 'https://avatars.mds.yandex.net/i?id=d2d3ba9f7054ee53452ad99cbc375595ded30b88-9882341-images-thumbs&n=13',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod '
+    name: "Emerald Hotel",
+    price: 150,
+    guests: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    place: "Italy Rukshwell 7 d",
+    image: "https://content.cdn-cian.ru/realty/articles/content/36585/3982790.jpg"
   },
   {
     id: 6,
-    date: '26 MARCH 2024',
-    title: 'Desert of survival',
-    image: 'https://avatars.mds.yandex.net/i?id=49f59a6582203a1cbf240c2b5a63a266baa11863-12810245-images-thumbs&n=13',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut I dolore manga allquam erat vol.Ut wisi enim '
+    name: "Hotel Beautiful City",
+    price: 150,
+    guests: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    place: "Italy Rukshwell 7 d",
+    image: "https://mainadmin.novostroyki.shop/media/imagemanager/43242_ee445a56ae509627ddd968ecef5c63f1.jpg"
   },
   {
     id: 7,
-    date: '26 MARCH 2024',
-    title: 'Above nothing',
-    image: 'https://avatars.mds.yandex.net/i?id=fea731f4d41cef6f696b8a5faa1a5c040e78e9f8-12481490-images-thumbs&n=13',
-    text: 'Lorem ipsum dolor sit amet, cotuer adipising elit, sed diam nmy nibh euismod tincidunt ut I dolore manga allquam erat vol.Ut wisi enim ad minim veniam nostrud exerct tation ullamcor.'
+    name: "Rooftop Hotel",
+    price: 225,
+    guests: 3,
+    bedrooms: 2,
+    bathrooms: 1,
+    place: "Atlanta Sorich 11 a",
+    image: "https://design.pibig.info/uploads/posts/2023-03/1678914150_design-pibig-info-p-apartamenti-s-terrasoi-dizain-instagram-21.jpg"
+  },
+  {
+    id: 8,
+    name: "Hotel By The Sea",
+    price: 150,
+    guests: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    place: "Italy Rukshwell 7 d",
+    image: "https://34travel.me/media/posts/58a2cc7492d13-hotels.jpg"
+  },
+  {
+    id: 9,
+    name: "Big Hotel",
+    price: 150,
+    guests: 1,
+    bedrooms: 1,
+    bathrooms: 1,
+    place: "Italy Rukshwell 7 d",
+    image: "https://design.pibig.info/uploads/posts/2023-03/1678914161_design-pibig-info-p-apartamenti-s-terrasoi-dizain-instagram-2.jpg"
+  }
+];
+
+const flipperCardStorage = [
+  {
+    image: "https://s0.rbk.ru/v6_top_pics/resized/1200xH/media/img/4/53/756069837119534.jpg"
+  },
+  {
+    image: "https://static4.banki.ru/ugc/9c/bb/d5/6c/10993780.jpg"
+  },
+  {
+    image: "https://s0.rbk.ru/v6_top_pics/media/img/6/75/754678189948756.jpeg"
+  },
+  {
+    image: "https://static.news.ru/photo/1e0b066e-9b27-11ee-a3f5-02420a0000c9_1024.jpg"
+  },
+  {
+    image: "https://b1.m24.ru/c/1926535.jpg"
   }
 ];
 
@@ -100,7 +128,7 @@ app.get('/firstTypeNews', (req, res) => {
   }, 3000)
 });
 
-app.get('/secondTypeNews', (req, res) => {
+app.get('/flipperCardStorage', (req, res) => {
   setTimeout(() => {
     if (req.query && req.query.title) {
       return res.json(secondTypeNewsList.filter(item => item.title.toLowerCase().includes(req.query.title.toLowerCase())))
