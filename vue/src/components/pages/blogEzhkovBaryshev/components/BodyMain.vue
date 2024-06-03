@@ -6,7 +6,7 @@
 
         <div class="search-block">
           <form class="search-block__form">
-            <input v-model="searchRequest" type="text" name="text" class="search-block__text" placeholder="Поиск">
+            <input v-model="searchRequest" @input="updateSearch" type="text" name="text" class="search-block__text" placeholder="Поиск">
             <input type="submit" name="submit" class="search-block__submit" value="">
           </form>
         </div>
@@ -26,12 +26,12 @@
       </div>
       <div class="card-list"
       >
-<!--        <BodyPriceCard-->
-<!--            v-for="(card, index) in getFilteredCard"-->
-<!--            :key="index"-->
-<!--            :currentIndex="index"-->
-<!--            :cardObject="card"-->
-<!--        />-->
+        <BodyPriceCard
+            v-for="(card, index) in getApartmentsCardStore"
+            :key="index"
+            :currentIndex="index"
+            :cardObject="card"
+        />
 
       </div>
       <div class="text">
@@ -81,14 +81,14 @@
 </template>
 
 <script>
-// import BodyPriceCard from "@/components/pages/blogEzhkovBaryshev/components/BodyPriceCard.vue";
-import {mapGetters} from "vuex";
+import BodyPriceCard from "@/components/pages/blogEzhkovBaryshev/components/BodyPriceCard.vue";
+import {mapGetters, mapActions} from "vuex";
 import {RouteNames} from "@/router/routes";
 
 export default {
   name: 'BodyMainPriceCard',
   components: {
-    // BodyPriceCard
+    BodyPriceCard
   },
   data() {
     return {
@@ -98,14 +98,24 @@ export default {
   computed: {
     ...mapGetters('ApartmentsCardStore', [
       'getApartmentsCardStore',
-      'getFilteredApartmentsCardStore'
     ]),
-    getFilteredCard() {
-      return this.getFilteredApartmentsCardStore(this.searchRequest)
-    },
     routeNames() {
       return RouteNames
+    },
+    smallCards() {
+      return this.getApartmentsCardStore
     }
+  },
+  methods: {
+    ...mapActions('ApartmentsCardStore', [
+      'loadSmallCard'
+    ]),
+    updateSearch() {
+      this.loadSmallCard(this.searchRequest)
+    }
+  },
+  created() {
+    this.loadSmallCard('')
   }
 }
 </script>

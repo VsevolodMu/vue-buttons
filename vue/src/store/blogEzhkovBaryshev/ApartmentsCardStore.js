@@ -5,7 +5,7 @@ const state = {
 }
 
 const getters = {
-  getApartmentsCardStore: state => state.apartmentsCardStorage,/*
+  getApartmentsCardStore: state => state.apartmentsCardStorage/*
   getFilteredApartmentsCardStore: state => finder => state.apartmentsCardStorage.filter(apartmentsCardStorage => apartmentsCardStorage.name.toLowerCase().includes(finder.toLowerCase()))*/
 }
 const mutations = {
@@ -18,7 +18,7 @@ const actions = {
   loadSmallCard: ({commit}, payload) => {
     axios.get('http://localhost:3000/apartmentsCardStorage', {
       params: {
-        title: payload
+        name: payload
       }
     })
       .then((response) => {

@@ -128,27 +128,26 @@ app.get('/flipperCardStorage', (req, res) => {
   }, 3000)
 });
 
-app.get('/432543', (req, res) => {
+app.get('/apartmentsCardStorage', (req, res) => {
   setTimeout(() => {
-    if (req.query && req.query.title) {
-      return res.json(secondTypeNewsList.filter(item => item.title.toLowerCase().includes(req.query.title.toLowerCase())))
+    if (req.query && req.query.name) {
+      return res.json(apartmentsCardStorage.filter(item => item.name.toLowerCase().includes(req.query.name.toLowerCase())))
     }
-    res.json(secondTypeNewsList)
+    res.json(apartmentsCardStorage)
   }, 3000)
 })
 
-app.get('/secondTypeNews/:id', (req, res) => {
+app.get('/apartmentsCardStorage/:id', (req, res) => {
   const id = parseInt(req.params.id);
-  const newsItem = secondTypeNewsList.find(item => item.id === id);
+  const cardItem = apartmentsCardStorage.find(item => item.id === id);
   setTimeout(() => {
-    return res.json(newsItem);
+    return res.json(cardItem);
   }, 3000)
 });
 
-app.post('/secondTypeNews', (req, res) => {
-  const newCard = req.body;
-  newCard.id = secondTypeNewsList.length
-  secondTypeNewsList.push(newCard);
+app.post('/apartmentsCardStorage', (req, res) => {
+  const newCardItem = req.body
+  apartmentsCardStorage.push(newCardItem)
 });
 
 server.listen(port, () => {
