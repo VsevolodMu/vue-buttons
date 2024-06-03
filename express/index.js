@@ -122,13 +122,13 @@ app.get('/', (req, res) => {
   res.send('My backend!!!Test');
 });
 
-app.get('/firstTypeNews', (req, res) => {
+app.get('/flipperCardStorage', (req, res) => {
   setTimeout(() => {
-    return res.json(firstTypeNewsList);
+    return res.json(flipperCardStorage);
   }, 3000)
 });
 
-app.get('/flipperCardStorage', (req, res) => {
+app.get('/432543', (req, res) => {
   setTimeout(() => {
     if (req.query && req.query.title) {
       return res.json(secondTypeNewsList.filter(item => item.title.toLowerCase().includes(req.query.title.toLowerCase())))
@@ -147,7 +147,7 @@ app.get('/secondTypeNews/:id', (req, res) => {
 
 app.post('/secondTypeNews', (req, res) => {
   const newCard = req.body;
-  newCard.id=secondTypeNewsList.length
+  newCard.id = secondTypeNewsList.length
   secondTypeNewsList.push(newCard);
 });
 

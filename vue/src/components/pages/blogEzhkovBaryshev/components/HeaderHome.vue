@@ -25,7 +25,7 @@
 import ButtonPagination from "@/components/pages/blogEzhkovBaryshev/components/ButtonPagination.vue";
 import HeaderNav from "@/components/pages/blogEzhkovBaryshev/components/HeaderNav.vue";
 import Search from "@/components/pages/blogEzhkovBaryshev/components/Search.vue";
-import {mapGetters} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 
 export default {
   name: "HeaderHome",
@@ -44,13 +44,20 @@ export default {
       'getImages'
     ]),
     cardImage() {
-      return {backgroundImage: 'url(' + this.getImages[this.currentIndex]['image'] + ')'}
+      const currentImage = this.getImages[this.currentIndex];
+      return currentImage ? {backgroundImage: `url(${currentImage.image})`} : {};
     }
   },
   methods: {
+    ...mapActions('FlipperCardStore', [
+      'loadImages'
+    ]),
     move(index) {
       this.currentIndex = index;
     }
+  },
+  created() {
+    this.loadImages();
   }
 }
 </script>

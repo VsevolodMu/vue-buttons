@@ -26,12 +26,12 @@
       </div>
       <div class="card-list"
       >
-        <BodyPriceCard
-            v-for="(card, index) in getFilteredCard"
-            :key="index"
-            :currentIndex="index"
-            :cardObject="card"
-        />
+<!--        <BodyPriceCard-->
+<!--            v-for="(card, index) in getFilteredCard"-->
+<!--            :key="index"-->
+<!--            :currentIndex="index"-->
+<!--            :cardObject="card"-->
+<!--        />-->
 
       </div>
       <div class="text">
@@ -81,14 +81,14 @@
 </template>
 
 <script>
-import BodyPriceCard from "@/components/pages/blogEzhkovBaryshev/components/BodyPriceCard.vue";
+// import BodyPriceCard from "@/components/pages/blogEzhkovBaryshev/components/BodyPriceCard.vue";
 import {mapGetters} from "vuex";
 import {RouteNames} from "@/router/routes";
 
 export default {
   name: 'BodyMainPriceCard',
   components: {
-    BodyPriceCard
+    // BodyPriceCard
   },
   data() {
     return {
